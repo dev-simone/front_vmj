@@ -233,6 +233,7 @@ const ArticleHandler = () => {
           <div className="save-delete-btn--container">
             <button className="save--btn" onClick={handleSubmit}>
               <svg
+                className="check-save--icon"
                 width="60"
                 height="60"
                 viewBox="0 0 60 60"
@@ -252,6 +253,7 @@ const ArticleHandler = () => {
             </button>
             <button className="delete--btn">
               <svg
+                className="delete-btn--icon"
                 width="60"
                 height="60"
                 viewBox="0 0 60 60"
