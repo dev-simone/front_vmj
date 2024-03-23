@@ -28,12 +28,9 @@ const Login = React.lazy(() => import("./pages/Login"));
 const PersonalArea = React.lazy(() => import("./pages/PersonalArea"));
 const Article = React.lazy(() => import("./pages/Article"));
 const ArticleHandler = React.lazy(() => import("./pages/ArticleHandler"));
-import PrivateRoute from "./components/PrivateRoute";
+const NotFound = React.lazy(() => import("./pages/NotFound.jsx"));
 
-/* --------------- */
-/* DA CANCELLARE   */
-/* --------------- */
-import Contacts from "./components/Contacts.jsx";
+import PrivateRoute from "./components/PrivateRoute";
 
 const App = () => {
   return (
@@ -46,14 +43,15 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/login" element={<Login />} />
           <Route path="/article/:id" element={<Article />} />
-          {/* TEST */}
-          <Route path="/test" element={<Contacts />} />
+
           {/**ROUTES TO PROTECT */}
           <Route element={<PrivateRoute />}>
             <Route path="/personal-area" element={<PersonalArea />} />
             <Route path="/article-handler" element={<ArticleHandler />} />
             <Route path="/article-handler/:id" element={<ArticleHandler />} />
           </Route>
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
       <Footer />

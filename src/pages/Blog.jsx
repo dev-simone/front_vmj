@@ -8,6 +8,7 @@ const Blog = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const getPosts = async () => {
       try {
         const response = await axios.get("/posts/get", {});
@@ -22,13 +23,10 @@ const Blog = () => {
     getPosts();
   }, []);
 
-  // Funzione per aggiornare lo stato con l'input dell'utente
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
   };
 
-  // Filtra gli articoli in base al termine di ricerca
-  // Puoi personalizzare la condizione di filtro in base alle tue esigenze
   const filteredArticles = posts?.filter((article) =>
     article.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -56,11 +54,11 @@ const Blog = () => {
       <div className="blog-articles--container">
         {filteredArticles.length > 0
           ? filteredArticles.map((article, index) => (
-              <BlogCard key={index} article={article} />
-            ))
+            <BlogCard key={index} article={article} />
+          ))
           : posts.map((article, index) => (
-              <BlogCard key={index} article={article} />
-            ))}
+            <BlogCard key={index} article={article} />
+          ))}
       </div>
     </div>
   );

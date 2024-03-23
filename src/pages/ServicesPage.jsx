@@ -35,9 +35,9 @@ const ServicesPage = () => {
   const dots = [dot1, dot2, dot3];
   const { contextSafe } = useGSAP();
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const openSidebarContacts = contextSafe(() => {
     gsap.to(".contacts--sidebar", {

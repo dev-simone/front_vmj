@@ -199,7 +199,7 @@ const Navbar = () => {
               </button>
             </li>
           </ul>
-          <Link to={authToken ? "/personal-area" : "/login"}>
+          <Link to={authToken ? "/personal-area" : "/login"} onClick={() => handleNavLinkClick("login")}>
             <svg
               width="25"
               height="28"
