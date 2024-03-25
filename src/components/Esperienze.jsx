@@ -39,7 +39,7 @@ const Esperienze = () => {
           <p className="experience-p">
             <ul>
               <li>
-                Allestimento vetrine e interni dei PV in accordocon le strategie di posizionamento e di immagineaziendale:
+                Allestimento vetrine e interni dei PV in accordo con le strategie di posizionamento e di immagine aziendale:
               </li>
               <li>
                 Formazione in store staff per il mantenimento delle guidelines
@@ -57,7 +57,7 @@ const Esperienze = () => {
         <div>
           <h2 className="ff-lufga text-black">Visual Merchandiser</h2>
           <p className="experience-p">
-            Allestimento vetrine e interni dei PV in accordo conle strategie di posizionamento e di immagine aziendale
+            Allestimento vetrine e interni dei PV in accordo con le strategie di posizionamento e di immagine aziendale
           </p>
         </div>
       </div>

@@ -111,7 +111,11 @@ const ServicesPage = () => {
     {
       title: "Principali Conte",
       titleSpan: "nuti",
-      text: "Acquisizione degli strumenti per razionalizzare gli spazi espositivi Conoscenza delle tecniche per valorizzare i prodotti nel punti venditaSviluppo della capacità di utilizzare materiali, luci e colori per una comunicazione multisensoriale",
+      bulleList: [
+        "Acquisizione degli strumenti per razionalizzare gli spazi espositivi",
+        "Conoscenza delle tecniche per valorizzare i prodotti nel punti vendita",
+        "Sviluppo della capacità di utilizzare materiali, luci e colori per una comunicazione multisensoriale",
+      ],
       img1: placeholder,
       img2: placeholder,
       img3: placeholder,
@@ -161,12 +165,6 @@ const ServicesPage = () => {
           "-=0.5"
         );
       }
-    });
-
-    gsap.to("#mouse-icon", {
-      y: 10,
-      yoyo: true,
-      repeat: -1,
     });
   });
 
@@ -242,9 +240,16 @@ const ServicesPage = () => {
                   }
                 </ul>
               </div>
-            ) : (
-              <p>{serviceObj[index].text}</p>
-            )}
+            ) : index === 5 ? (
+              <ul className="principal-content-bullet-list">
+                {serviceObj[index].bulleList.map((item) => {
+                  return <li>{item}</li>
+                })}
+              </ul>
+            )
+              : (
+                <p>{serviceObj[index].text}</p>
+              )}
             <p className="arrow-p">Usa le frecce per esplorare i diversi servizi</p>
             <div className="arrow-wood-container">
               <button

@@ -1074,6 +1074,7 @@ select {
   }
 
   #path-4 {
+    gap: 7rem;
     margin-top: 8rem;
     transform: translateX(12rem);
   }
@@ -1266,6 +1267,18 @@ select {
 
 .index-1 ul>li {
   list-style: disc;
+}
+
+.principal-content-bullet-list {
+  width: 40ch;
+  margin-left: 1rem;
+  font-size: 14px;
+  margin-top: 2rem;
+
+  & li {
+    list-style: disc;
+    margin-block: 1rem;
+  }
 }
 
 .cta-container {
@@ -1591,6 +1604,17 @@ select {
     width: 40ch;
     margin-left: 8rem;
     font-size: 16px;
+  }
+
+  .principal-content-bullet-list {
+    width: 40ch;
+    margin-left: 8rem;
+    font-size: 24px;
+    margin-top: 2rem;
+
+    & li {
+      margin-block: 1rem;
+    }
   }
 
   .arrow-p {
@@ -2901,6 +2925,8 @@ select {
   & h1 {
     width: 40ch;
     font-size: 14px;
+    font-weight: 400;
+    font-family: var(--ff-lufga);
     margin-block: 2rem;
   }
 

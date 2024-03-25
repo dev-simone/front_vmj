@@ -31,8 +31,8 @@ const AboutMe = () => {
       imgRight: secondSlideRight,
     },
     {
-      title: "Cosa Offro",
-      text: "Metto disposizione di commercianti, imprenditori, agenzie retail e istituti di formazione le competenze acquisite nel mio percorso professionale per fornire supporto ecollaborazione,  sia dal punto di vista formativo che operativo",
+      title: "Cosa offro",
+      text: "Metto disposizione di commercianti, imprenditori, agenzie retail e istituti di formazione le competenze acquisite nel mio percorso professionale per fornire supporto e collaborazione, sia dal punto di vista formativo che operativo",
       imgLeft: thirdSlideLeft,
       imgRight: thirdSlideRight,
     },
