@@ -26,13 +26,13 @@ const AboutMe = () => {
     },
     {
       title: "Il mio percorso",
-      text: "Dal 1995 mi occupo di allestimento vetrine e visual merchandising per i settori non food.",
+      text: "Dal 1995 mi occupo di allestimento vetrine e visual merchandising per i settori non food. Nella mia esperienza trentennale ho avuto modo di lavorare per importanti aziende, nazionali ed internazionali, e realizzare allestimenti per negozi in franchising e multibrand in diversi settori merceologici",
       imgLeft: SecondSlideLeft,
       imgRight: secondSlideRight,
     },
     {
-      title: "La mia esperienza",
-      text: "Nella mia esperienza trentennale ho avuto modo di lavorare per importanti Aziende, nazionali ed internazionali, e realizzare allestimenti per negozi multibrand in diversi settori merceologici.",
+      title: "Cosa Offro",
+      text: "Metto disposizione di commercianti, imprenditori, agenzie retail e istituti di formazione le competenze acquisite nel mio percorso professionale per fornire supporto ecollaborazione,  sia dal punto di vista formativo che operativo",
       imgLeft: thirdSlideLeft,
       imgRight: thirdSlideRight,
     },

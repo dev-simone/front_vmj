@@ -56,9 +56,13 @@ const Blog = () => {
           ? filteredArticles.map((article, index) => (
             <BlogCard key={index} article={article} />
           ))
-          : posts.map((article, index) => (
-            <BlogCard key={index} article={article} />
-          ))}
+          : filteredArticles.length === 0 ? (
+            <h1 className="search-empty">Nessun articolo trovato</h1>
+          ) : (
+            posts.map((article, index) => (
+              <BlogCard key={index} article={article} />
+            )
+            ))}
       </div>
     </div>
   );

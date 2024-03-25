@@ -619,31 +619,24 @@ select {
   background-repeat: no-repeat;
   background-size: contain;
   height: 173px;
-  width: 347px;
+  width: 330px;
 }
 
 .cosa-offro ul {
   margin-top: 1.5rem;
-  transform: translate(25px, 30px);
+  transform: translate(25px, 25px);
 }
 
 .cosa-offro ul>li {
   display: flex;
   align-items: center;
-  gap: var(--gap);
+  gap: 0.5rem;
   margin-block: 0.5rem;
   font-size: 10px;
 }
 
 .cosa-offro ul>li img {
   width: 15px;
-}
-
-.cosa-offro ul>li span {
-  color: hsl(var(--clr-orange));
-  font-size: 14px;
-  font-weight: 900;
-  font-family: var(--ff-lufga);
 }
 
 #manichino-cosa-offro {
@@ -682,17 +675,18 @@ select {
   }
 
   .cosa-offro .cornice {
-    height: 240px;
-    width: 446px;
+    height: 260px;
+    width: 500px;
   }
 
   .cosa-offro ul {
-    transform: translate(40px, 45px);
+    transform: translate(40px, 40px);
   }
 
   .cosa-offro ul>li {
     margin-block: 1rem;
     font-size: 14px;
+    gap: 1rem
   }
 
   #manichino-cosa-offro {
@@ -705,7 +699,7 @@ select {
   .cosa-offro {
     margin-top: 5rem;
     min-height: 636px;
-    padding-inline: 0;
+    padding-inline: 1rem;
   }
 
   .cosa-offro h2 {
@@ -714,7 +708,7 @@ select {
 
   .cosa-offro .cornice {
     width: 100%;
-    height: 356px;
+    height: 400px;
   }
 
   .cosa-offro ul {
@@ -744,8 +738,7 @@ select {
   }
 
   .services-link {
-    margin-top: 3rem;
-    justify-content: center;
+    margin-top: 2rem;
     font-size: var(--fs-500);
   }
 }
@@ -866,6 +859,10 @@ select {
     width: 50%;
   }
 
+  .center p {
+    width: 30ch;
+  }
+
   .left,
   .right {
     width: 25%;
@@ -883,7 +880,7 @@ select {
 
 .experience-container {
   position: relative;
-  height: 600px;
+  height: 650px;
   margin: 1rem;
 }
 
@@ -903,7 +900,8 @@ select {
   position: absolute;
   margin-top: 2rem;
   left: 50%;
-  transform: translateX(-90%);
+  transform: translateX(-85%);
+  width: 130px;
 }
 
 .text-container {
@@ -918,8 +916,12 @@ select {
   width: 24ch;
 }
 
+.experience-p ul>li {
+  list-style: disc;
+}
+
 #path-1 {
-  transform: translateX(1.5rem);
+  transform: translateX(2rem);
 }
 
 #path-1 .experience-p {
@@ -927,8 +929,9 @@ select {
 }
 
 #path-2 {
-  margin-top: 2rem;
-  transform: translateX(0.5rem);
+  gap: 5rem;
+  margin-top: 5rem;
+  transform: translateX(0.3rem);
 }
 
 #path-3 {
@@ -1004,7 +1007,7 @@ select {
   }
 
   #path-3 {
-    margin-top: 7.5rem;
+    margin-top: 4.5rem;
     transform: translateX(-4rem);
   }
 
@@ -1018,8 +1021,9 @@ select {
   }
 
   #path-4 {
+    gap: 5rem;
     margin-top: 6rem;
-    transform: translateX(9rem);
+    transform: translateX(8.5rem) translateY(-1rem);
   }
 
   .manichino-experience {
@@ -1064,7 +1068,7 @@ select {
   }
 
   #path-3 {
-    margin-top: 11rem;
+    margin-top: 5rem;
     transform: translateX(-2rem);
   }
 
@@ -1074,9 +1078,8 @@ select {
   }
 
   .manichino-experience {
-    width: auto;
     bottom: -5rem;
-    left: -3rem;
+    left: -8rem;
   }
 }
 
@@ -1208,7 +1211,7 @@ select {
 }
 
 .services-second-section {
-  height: 800px;
+  height: 1100px;
   width: 100%;
   margin-inline: auto;
   margin-top: 2rem;
@@ -1233,6 +1236,29 @@ select {
   font-weight: 600;
   margin: 1rem auto;
   width: 40ch;
+}
+
+.fs-service {
+  width: 20ch !important;
+  font-size: var(--fs-600) !important;
+  margin-bottom: 1rem;
+  margin-inline: auto;
+}
+
+.index-1 p {
+  margin-top: 0 !important;
+  font-size: 14px !important;
+}
+
+.index-1 ul {
+  width: 40ch;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.index-1 ul>li {
+  list-style: disc;
 }
 
 .cta-container {
@@ -1404,7 +1430,7 @@ select {
   }
 
   .services-second-section {
-    height: 500px;
+    height: 800px;
     width: 768px;
   }
 
@@ -1426,6 +1452,23 @@ select {
     margin-inline: auto;
     justify-content: space-between;
     flex-direction: row;
+  }
+
+  .fs-service {
+    width: 14ch !important;
+    font-size: var(--fs-600) !important;
+    margin-bottom: 1rem;
+  }
+
+  .index-1 p {
+    margin-top: 0 !important;
+    font-size: 14px !important;
+  }
+
+  .index-1 ul {
+    width: 40ch;
+    font-size: 14px;
+    margin-left: 1rem;
   }
 
   .services-second-section .img-container {
@@ -1509,7 +1552,7 @@ select {
   }
 
   .services-second-section {
-    height: 820px;
+    height: 900px;
     width: 1440px;
     margin-top: 5rem;
   }
@@ -1527,6 +1570,20 @@ select {
     font-size: 22px;
     margin-top: 3rem;
     margin-left: 8rem;
+  }
+
+  .fs-service {
+    width: 22ch !important;
+  }
+
+  .index-1 p {
+    font-size: 18px !important;
+  }
+
+  .index-1 ul {
+    width: 40ch;
+    margin-left: 8rem;
+    font-size: 16px;
   }
 
   .arrow-p {
@@ -1706,6 +1763,12 @@ select {
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
   color: hsl(var(--clr-black));
+}
+
+.search-empty {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .personal-area.search-input {
@@ -2853,7 +2916,7 @@ select {
 
 .quote--author {
   margin-inline: auto;
-  width: 80px;
+  width: 180px;
 }
 
 @media (min-width: 768px) {
@@ -2862,7 +2925,7 @@ select {
 
     & h1 {
       font-size: var(--fs-500);
-      margin-block: 5rem;
+      margin-block: 3rem;
     }
 
     & h2 {
@@ -2875,7 +2938,7 @@ select {
   }
 
   .quote--author {
-    width: 130px;
+    width: 250px;
   }
 }
 
@@ -2885,6 +2948,7 @@ select {
 
     & h1 {
       font-size: auto;
+      width: 45ch;
     }
 
     & h2 {
@@ -2897,7 +2961,7 @@ select {
   }
 
   .quote--author {
-    width: 160px;
+    width: 250px;
   }
 }
 

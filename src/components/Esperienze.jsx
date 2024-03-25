@@ -22,10 +22,9 @@ const Esperienze = () => {
           <p>2023 - Attuale</p>
         </div>
         <div>
-          <h2 className="ff-lufga text-black">CEO & Founder</h2>
+          <h2 className="ff-lufga text-black">Titolare</h2>
           <p className="experience-p">
-            Studio di consulenza vetrinistica e Visual Merchandising per ben
-            oltre 16 anni
+            Consulenza, formazione e allestimento vetrine e interni del punto vendita
           </p>
         </div>
       </div>
@@ -38,8 +37,14 @@ const Esperienze = () => {
         <div>
           <h2 className="ff-lufga text-black">Visual Merchandiser</h2>
           <p className="experience-p">
-            Studio di consulenza vetrinistica e Visual Merchandising per ben
-            oltre 16 anni
+            <ul>
+              <li>
+                Allestimento vetrine e interni dei PV in accordocon le strategie di posizionamento e di immagineaziendale:
+              </li>
+              <li>
+                Formazione in store staff per il mantenimento delle guidelines
+              </li>
+            </ul>
           </p>
         </div>
       </div>
@@ -52,8 +57,7 @@ const Esperienze = () => {
         <div>
           <h2 className="ff-lufga text-black">Visual Merchandiser</h2>
           <p className="experience-p">
-            Studio di consulenza vetrinistica e Visual Merchandising per ben
-            oltre 16 anni
+            Allestimento vetrine e interni dei PV in accordo conle strategie di posizionamento e di immagine aziendale
           </p>
         </div>
       </div>
@@ -68,8 +72,7 @@ const Esperienze = () => {
         <div>
           <h2 className="ff-lufga text-black fs-400">Titolare</h2>
           <p className="experience-p">
-            Studio di consulenza vetrinistica e Visual Merchandising per ben
-            oltre 16 anni
+            Consulenza, allestimento vetrine e vendita manichini
           </p>
         </div>
       </div>

@@ -48,16 +48,6 @@ const Article = () => {
       </div>
 
       <div dangerouslySetInnerHTML={{ __html: article?.content }} />
-
-      {/*
-      <div className="article-page-likes--container">
-        <div>
-          <h3>Ti è piaciuto questo articolo?</h3>
-          <p>img</p>
-        </div>
-        <p>Dimostracelo con un like</p>
-      </div>
-      */}
     </div>
   );
 };

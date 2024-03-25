@@ -1,5 +1,13 @@
 // eslint-disable-next-line react/prop-types
+import { useNavigate } from "react-router-dom";
+
 const ModalSaved = ({ setToggleModalSaved }) => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    setToggleModalSaved(false);
+    navigate("/personal-area");
+  }
+
   return (
     <div className="modal">
       <div className="modal-container">
@@ -21,7 +29,7 @@ const ModalSaved = ({ setToggleModalSaved }) => {
         </svg>
         <p>Articolo salvato con successo</p>
         <button
-          onClick={() => setToggleModalSaved(false)}
+          onClick={handleClick}
           className="modal-saved--btn"
         >
           OK

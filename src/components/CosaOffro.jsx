@@ -32,34 +32,41 @@ const CosaOffro = () => {
     <div className="cosa-offro">
       <div id="container-anim">
         <h2 className="text-orange ff-lufga">
-          Cosa <span className="underline">offro</span>
+          Ser<span className="underline">vizi</span>
         </h2>
         <div className="cornice">
           <ul className="text-black">
             <li>
               <img src={checkIcon} alt="check" />
               <p>
-                <span>Allestimento </span>: Vetrine, Punto vendita e show room
+                Consulenza e allestimento vetrine
               </p>
             </li>
             <li>
               <img src={checkIcon} alt="check" />
               <p>
-                <span>Layout </span>: Organizzazione degli Arredi e del Prodotto
+                Consulenza e allestimento del punto vendita
               </p>
             </li>
             <li>
               <img src={checkIcon} alt="check" />
               <p>
-                <span>Formazione </span>: Vetrinistica e Visual Merchandising
+                Organizzazione layout negozio
               </p>
             </li>
             <li>
               <img src={checkIcon} alt="check" />
               <p>
-                <span>Consulenza </span>: Vetrinistica e Visual Merchandising
+                Organizzazione layout vetrine
               </p>
             </li>
+            <li>
+              <img src={checkIcon} alt="check" />
+              <p>
+                Formazione
+              </p>
+            </li>
+
           </ul>
         </div>
         <div className="services-link">

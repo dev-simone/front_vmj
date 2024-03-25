@@ -2,12 +2,11 @@ const Quote = () => {
   return (
     <div className="quote-section">
       <h1>
-        “ It&apos;s not about money. It&apos;s about the people you have, how
-        you&apos;re led, and how much you get it. ”
+        “ Il merchandising è innanzitutto un modo di pensare a come valorizzare nel miglior modo possibile il prodotto, la famiglia di prodotti, il reparto, il punto vendita ”
       </h1>
 
       <div className="quote--author">
-        <h2>Steve Jobs</h2>
+        <h2>J.E Masson – A. Wellhoff</h2>
       </div>
     </div>
   );

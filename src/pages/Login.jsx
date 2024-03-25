@@ -23,6 +23,7 @@ const Login = () => {
 
     try {
       const response = await axios.post("/user/login", credentials);
+      console.log(response);
       const authToken = response.headers["auth-token"];
       sessionStorage.setItem("authToken", authToken);
       setAuthToken(authToken);

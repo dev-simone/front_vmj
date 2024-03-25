@@ -166,7 +166,12 @@ const ArticleHandler = () => {
 
     formData.append("title", data.title);
     formData.append("subTitle", data.subTitle);
-    formData.append("content", editor.getHTML());
+
+    const contentHTM = editor.getHTML();
+    const contentWithLineBreaks = contentHTM.replace(/(<p><\/p>)+/g, "<br>");
+
+    formData.append("content", contentWithLineBreaks);
+    console.log(editor.getHTML());
 
     if (data.imgFile) {
       formData.append("image", data.imgFile);
@@ -201,6 +206,26 @@ const ArticleHandler = () => {
       }
     }
   };
+
+  const handleDeleteButton = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        `/posts/delete/${article._id}`,
+        {},
+        {
+          headers: {
+            "auth-token": authToken,
+          },
+        }
+
+      );
+      navigate("/personal-area");
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
 
   return (
     <div className="article-handler--page">
@@ -251,7 +276,7 @@ const ArticleHandler = () => {
               </svg>
               <p>Salva</p>
             </button>
-            <button className="delete--btn">
+            <button className="delete--btn" onClick={handleDeleteButton}>
               <svg
                 className="delete-btn--icon"
                 width="60"

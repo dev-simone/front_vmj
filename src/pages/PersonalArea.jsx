@@ -72,14 +72,19 @@ const PersonalArea = () => {
               removePostFromState={removePostFromState}
             />
           ))
-          : posts.map((article, index) => (
-            <BlogCard
-              key={index}
-              article={article}
-              personalArea={true}
-              removePostFromState={removePostFromState}
-            />
-          ))}
+          : filteredArticles.length === 0 ?
+            (
+              <h1 className="search-empty">Nessun articolo trovato</h1>
+            ) : (
+              posts.map((article, index) => (
+                <BlogCard
+                  key={index}
+                  article={article}
+                  personalArea={true}
+                  removePostFromState={removePostFromState}
+                />
+              )
+              ))}
       </div>
     </div>
   );

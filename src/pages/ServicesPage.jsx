@@ -55,55 +55,67 @@ const ServicesPage = () => {
 
   const serviceObj = [
     {
-      title: "Allestimento ve",
+      title: "Consulenza e Allestimento ve",
       titleSpan: "trine",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      text: "L'allestimento della vetrina è determinante per influenzare la scelta dei clienti di entrare in negozio. Condivido la mia esperienza trentennale per supportare i punti vendita nella creazione di vetrine accattivanti e commercialmente efficaci, per migliorare la visibilità dei prodotti e l’interazione con il pubblico di riferimento",
       img1: allestimentoVetrine1,
       img2: allestimentoVetrine2,
       img3: allestimentoVetrine3,
     },
     {
-      title: "Allestimento del punto ve",
+      title: "Consulenza e Allestimento del punto ve",
       titleSpan: "ndita",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      content: {
+        firtP: "In un mercato complesso e iper competitivo, i negozi devono riuscire a creare una narrazione coinvolgente per comunicare in modo efficace con il cliente.",
+        secondP: "Il Visual Merchandising svolge un ruolo cruciale per favorire questo processo, mediante un'esposizione accurata e significativa dei prodotti in vendita.",
+        thirdP: "Metto a disposizione la mia esperienza per aiutare proprietari di negozi e in store staff ad ottimizzare l'organizzazione dell’allestimento in negozio, potenziandone la comunicazione e migliorando il sellout.",
+        bulletTitle: "Modalità di lavoro:",
+        bulletList: [
+          "Briefing per una condivisione delle esigenze commerciali del punto vendita",
+          "ndividuazione delle soluzioni espositive più adeguate – non solo dal punto di vista estetico, ma soprattutto commerciale – al fine di migliorare l’esposizione in negozio",
+          "Identificazione delle attività operative e intervento sul punto vendita, con definizione di budget e tempistiche",
+        ],
+      },
       img1: allestimentoPuntoVendita1,
       img2: allestimentoPuntoVendita2,
       img3: allestimentoPuntoVendita3,
     },
-    {
-      title: "Formazione in neg",
-      titleSpan: "ozio",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-      img1: placeholder,
-      img2: placeholder,
-      img3: placeholder,
-      content: {},
-    },
 
     {
-      title: "Attività di doc",
-      titleSpan: "enza",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-      img1: placeholder,
-      img2: placeholder,
-      img3: placeholder,
-    },
-    {
-      title: "Layout neg",
+      title: "Organizzazione layout neg",
       titleSpan: "ozio",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      text: "Il layout rappresenta l’organizzazione di strutture e prodotto nell'area espositiva, la cui funzione è quella di favorire l'interazione tra cliente e offerta, migliorandone l'attrattività e la comunicazione. Attraverso l'analisi e la riorganizzazione degli spazi, aiuto ad ottimizzare la disposizione degli arredi esistenti o a valutare l’inserimento di nuove strutture espositive per sfruttare in modo produttivo l’area di vendita",
       img1: layoutNegozio1,
       img2: layoutNegozio2,
       img3: layoutNegozio3,
     },
+
     {
-      title: "Layout ve",
+      title: "Organizzazione layout ve",
       titleSpan: "trine",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      text: "Il layout della vetrina rappresenta l’organizzazione delle strutture espositive, dei manichini e del prodotto all’interno dello spazio espositivo. Sulla base degli elementi presenti nella vetrina aiuto il commerciante ad individuare i supporti più adatti per migliorare la presentazione dei prodotti",
       img1: layoutVetrine1,
       img2: layoutVetrine2,
       img3: layoutVetrine3,
     },
+
+    {
+      title: "Form",
+      titleSpan: "azione",
+      text: "L'identità visiva e l'ambiente coinvolgente di un punto vendita richiedono competenze che vanno ben oltre la mera creatività: è cruciale acquisire la conoscenza delle tecniche espositive, in vetrina e in store, per differenziarsi dalla concorrenza e ottenere vantaggio competitivo. Le sessioni formative sono personalizzate e offrono un supporto operativo per commercianti e operatori del settore retail",
+      img1: placeholder,
+      img2: placeholder,
+      img3: placeholder,
+    },
+
+    {
+      title: "Principali Conte",
+      titleSpan: "nuti",
+      text: "Acquisizione degli strumenti per razionalizzare gli spazi espositivi Conoscenza delle tecniche per valorizzare i prodotti nel punti venditaSviluppo della capacità di utilizzare materiali, luci e colori per una comunicazione multisensoriale",
+      img1: placeholder,
+      img2: placeholder,
+      img3: placeholder,
+    }
   ];
 
   useEffect(() => {
@@ -181,8 +193,7 @@ const ServicesPage = () => {
     }
   };
 
-  /*
-  */
+  console.log(index);
 
   return (
     <>
@@ -213,11 +224,27 @@ const ServicesPage = () => {
       <div className="services-second-section" id="ancora">
         <div className="flex services-second--grid">
           <div>
-            <h1>
+            <h1 className={`${index === 1 && "fs-service"}`}>
               {serviceObj[index].title}
               <span className="underline">{serviceObj[index].titleSpan}</span>
             </h1>
-            <p>{serviceObj[index].text}</p>
+            {index === 1 ? (
+              <div className="index-1">
+                <p>{serviceObj[index].content.firtP}</p>
+                <p>{serviceObj[index].content.secondP}</p>
+                <p>{serviceObj[index].content.thirdP}</p>
+                <p>{serviceObj[index].content.bulletTitle}</p>
+                <ul>
+                  {
+                    serviceObj[index].content.bulletList.map((item) => {
+                      return <li>{item}</li>
+                    })
+                  }
+                </ul>
+              </div>
+            ) : (
+              <p>{serviceObj[index].text}</p>
+            )}
             <p className="arrow-p">Usa le frecce per esplorare i diversi servizi</p>
             <div className="arrow-wood-container">
               <button
