@@ -191,8 +191,6 @@ const ServicesPage = () => {
     }
   };
 
-  console.log(index);
-
   return (
     <>
       <div className="services-page">
