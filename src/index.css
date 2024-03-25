@@ -1002,6 +1002,7 @@ select {
   }
 
   #path-2 {
+    gap: 10rem;
     margin-top: 6rem;
     transform: translateX(0);
   }
@@ -1080,6 +1081,12 @@ select {
   .manichino-experience {
     bottom: -5rem;
     left: -8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .manichino-experience {
+    width: 40%;
   }
 }
 
