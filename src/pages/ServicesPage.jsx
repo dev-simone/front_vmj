@@ -82,8 +82,8 @@ const ServicesPage = () => {
     },
 
     {
-      title: "Organizzazione layout neg",
-      titleSpan: "ozio",
+      title: "Organizzazione ",
+      titleSpan: "layout",
       text: "Il layout rappresenta l’organizzazione di strutture e prodotto nell'area espositiva, la cui funzione è quella di favorire l'interazione tra cliente e offerta, migliorandone l'attrattività e la comunicazione. Attraverso l'analisi e la riorganizzazione degli spazi, aiuto ad ottimizzare la disposizione degli arredi esistenti o a valutare l’inserimento di nuove strutture espositive per sfruttare in modo produttivo l’area di vendita",
       img1: layoutNegozio1,
       img2: layoutNegozio2,
