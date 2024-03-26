@@ -92,7 +92,7 @@ const Footer = () => {
             <a href="https://www.facebook.com/VisualMerchandisingJourney" target="_blank">
               <img src={facebookIcon} alt="facebook" />
             </a>
-            <a href="https://www.instagram.com/visualmerchandisingjourney?igsh=MXZidmFiZWh5a2l1MQ==">
+            <a href="https://www.instagram.com/visualmerchandisingjourney?igsh=MXZidmFiZWh5a2l1MQ==" target="_blank">
               <img src={instagramIcon} alt="instagram" />
             </a>
             <a href="">
