@@ -66,7 +66,7 @@ const Contacts = () => {
           </div>
           <div className="contacts--icons-container">
             <img src={whatsappIcon} alt="whatsApp" />
-            <a href="">WhatsApp</a>
+            <a href="https://wa.me/3355722349" target="_blank">WhatsApp</a>
           </div>
           <div className="contacts--icons-container">
             <img src={facebookIcon} alt="facebook" />
