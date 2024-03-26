@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
           <div className="footer--contact-info">
             <img src={contactsEmailIcon} alt="email" />
-            <a href="">info@vmj.com</a>
+            <a href="">info@visualmerchandisingjourney.it</a>
           </div>
           <div className="footer--socials-container">
             <a href="">
