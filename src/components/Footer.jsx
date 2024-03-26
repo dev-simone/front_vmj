@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
           <div className="footer--contact-info">
             <img src={contactsEmailIcon} alt="email" />
-            <a href="">info@visualmerchandisingjourney.it</a>
+            <a href="mailto:info@visualmerchandisingjourney.it">info@visualmerchandisingjourney.it</a>
           </div>
           <div className="footer--socials-container">
             <a href="https://www.facebook.com/VisualMerchandisingJourney" target="_blank">
