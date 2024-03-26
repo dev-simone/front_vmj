@@ -95,7 +95,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/visualmerchandisingjourney?igsh=MXZidmFiZWh5a2l1MQ==" target="_blank">
               <img src={instagramIcon} alt="instagram" />
             </a>
-            <a href="">
+            <a href="https://wa.me/3355722349" target="_blank">
               <img src={whatsappIcon} alt="whatsapp" />
             </a>
           </div>
