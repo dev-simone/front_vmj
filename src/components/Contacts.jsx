@@ -76,7 +76,6 @@ const Contacts = () => {
 
         <div className="contacts--faq">
           <h2>Serve aiuto?</h2>
-          <a href="">FAQ</a>
           <a href="">Privacy Policy</a>
         </div>
       </div>
