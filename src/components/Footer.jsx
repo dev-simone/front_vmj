@@ -50,8 +50,6 @@ const Footer = () => {
         <div className="info-container">
           <p>P.IVA: 06151540652</p>
           <div className="info--p-iva-terms-container">
-            <a href="">User Terms & Conditions</a>
-            <p>|</p>
             <a href="">Privacy Policy</a>
           </div>
           <p>Copyright© 2024 - <a href="https://www.alias-development.com" target="_blank">Alias Development</a>. All Rights Reserved.</p>
