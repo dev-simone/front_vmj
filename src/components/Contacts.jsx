@@ -70,7 +70,7 @@ const Contacts = () => {
           </div>
           <div className="contacts--icons-container">
             <img src={facebookIcon} alt="facebook" />
-            <a href="">Facebook</a>
+            <a href="https://www.facebook.com/VisualMerchandisingJourney" target="_blank">Facebook</a>
           </div>
         </div>
 
