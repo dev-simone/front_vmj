@@ -89,7 +89,7 @@ const Footer = () => {
             <a href="">info@visualmerchandisingjourney.it</a>
           </div>
           <div className="footer--socials-container">
-            <a href="">
+            <a href="https://www.facebook.com/VisualMerchandisingJourney">
               <img src={facebookIcon} alt="facebook" />
             </a>
             <a href="">
