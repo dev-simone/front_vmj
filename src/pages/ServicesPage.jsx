@@ -18,6 +18,7 @@ import {
   layoutVetrine2,
   layoutVetrine3,
   placeholder,
+  formazione,
 } from "../assets/images";
 
 const ServicesPage = () => {
@@ -103,9 +104,9 @@ const ServicesPage = () => {
       title: "Form",
       titleSpan: "azione",
       text: "L'identità visiva e l'ambiente coinvolgente di un punto vendita richiedono competenze che vanno ben oltre la mera creatività: è cruciale acquisire la conoscenza delle tecniche espositive, in vetrina e in store, per differenziarsi dalla concorrenza e ottenere vantaggio competitivo. Le sessioni formative sono personalizzate e offrono un supporto operativo per commercianti e operatori del settore retail",
-      img1: placeholder,
-      img2: placeholder,
-      img3: placeholder,
+      img1: formazione,
+      img2: formazione,
+      img3: formazione,
     },
 
     {
