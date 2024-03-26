@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="info-container">
-          <p>P.IVA: 12345678910</p>
+          <p>P.IVA: 06151540652</p>
           <div className="info--p-iva-terms-container">
             <a href="">User Terms & Conditions</a>
             <p>|</p>
