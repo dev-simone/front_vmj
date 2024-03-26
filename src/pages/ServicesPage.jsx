@@ -211,10 +211,6 @@ const ServicesPage = () => {
             </div>
           </div>
         </div>
-        <p>
-          Si effettuano anche Consulenze online o inStore delle categorie
-          sopracitate
-        </p>
       </div>
 
       <div className="services-second-section" id="ancora">
