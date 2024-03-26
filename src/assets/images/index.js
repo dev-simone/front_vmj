@@ -65,6 +65,8 @@ export { default as layoutNegozio3 } from "./servizi/layout-negozio-sc/layout.we
 export { default as layoutVetrine1 } from "./servizi/layout-vetrine-sc/1.webp";
 export { default as layoutVetrine2 } from "./servizi/layout-vetrine-sc/2.webp";
 export { default as layoutVetrine3 } from "./servizi/layout-vetrine-sc/3.webp";
+// formazione
+export {default as formazione } from "./servizi/comingSoon.webp";
 
 // blog
 export { default as searchIcon } from "./blog/search-icon.svg";
