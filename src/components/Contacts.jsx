@@ -46,8 +46,8 @@ const Contacts = () => {
             <p>+39 335 572 2349</p>
           </div>
           <div className="contacts--icons-container">
-            <img src={contactsEmailIcon} alt="" />
-            <a href="">Inviami una mail</a>
+            <img src={contactsEmailIcon} alt="email" />
+            <a href="mailto:info@visualmerchandisingjourney.it">Inviami una mail</a>
           </div>
         </div>
 
