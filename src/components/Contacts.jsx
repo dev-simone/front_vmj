@@ -62,7 +62,7 @@ const Contacts = () => {
         <div className="contacts--email-phone-container">
           <div className="contacts--icons-container">
             <img src={instagramIcon} alt="instagram" />
-            <a href="">Instagram</a>
+            <a href="https://www.instagram.com/visualmerchandisingjourney?igsh=MXZidmFiZWh5a2l1MQ==" target="_blank">Instagram</a>
           </div>
           <div className="contacts--icons-container">
             <img src={whatsappIcon} alt="whatsApp" />
