@@ -63,7 +63,7 @@ const ServicesPage = () => {
       img3: allestimentoVetrine3,
     },
     {
-      title: "Consulenza e Allestimento del punto ve",
+      title: "Consulenza e allestimento del punto ve",
       titleSpan: "ndita",
       content: {
         firtP: "In un mercato complesso e iper competitivo, i negozi devono riuscire a creare una narrazione coinvolgente per comunicare in modo efficace con il cliente.",
@@ -72,7 +72,7 @@ const ServicesPage = () => {
         bulletTitle: "Modalità di lavoro:",
         bulletList: [
           "Briefing per una condivisione delle esigenze commerciali del punto vendita",
-          "ndividuazione delle soluzioni espositive più adeguate – non solo dal punto di vista estetico, ma soprattutto commerciale – al fine di migliorare l’esposizione in negozio",
+          "Individuazione delle soluzioni espositive più adeguate – non solo dal punto di vista estetico, ma soprattutto commerciale – al fine di migliorare l’esposizione in negozio",
           "Identificazione delle attività operative e intervento sul punto vendita, con definizione di budget e tempistiche",
         ],
       },
