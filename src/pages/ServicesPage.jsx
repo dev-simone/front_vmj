@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import useAuth from "../hooks/useAuth";
 import {
   serviziCartellino,
   cartellinoMobile,
@@ -22,6 +23,7 @@ import {
 } from "../assets/images";
 
 const ServicesPage = () => {
+  const { setSelectedPage } = useAuth();
   const [index, setIndex] = useState(0);
   const location = useLocation();
   const navigate = useNavigate();
@@ -37,6 +39,8 @@ const ServicesPage = () => {
   const { contextSafe } = useGSAP();
 
   useEffect(() => {
+    setSelectedPage("services");
+    sessionStorage.setItem("page", "services");
     window.scrollTo(0, 0);
   }, []);
 
@@ -152,9 +156,9 @@ const ServicesPage = () => {
       } else if (service === "allestimentoVetrine") {
         setIndex(0);
       } else if (service === "formazione") {
-        setIndex(2);
+        setIndex(3);
       } else if (service === "layout") {
-        setIndex(4);
+        setIndex(2);
       }
       const elementoAncora = document.querySelector(ancora);
       if (elementoAncora) {
@@ -204,11 +208,11 @@ const ServicesPage = () => {
     if (option === "allestimentoVetrine") {
       setIndex(0);
       navigate("#ancora");
-    } else if (option === "formazione") {
+    } else if (option === "layout") {
       setIndex(2);
       navigate("#ancora");
-    } else if (option === "layout") {
-      setIndex(4);
+    } else if (option === "formazione") {
+      setIndex(3);
       navigate("#ancora");
     }
   };
@@ -224,12 +228,11 @@ const ServicesPage = () => {
             <div onClick={() => handleServiceClick("allestimentoVetrine")}>
               <h2>Allestimento</h2>
             </div>
-            <div>
-              <h2>Formazione</h2>
-              <p className="services-card-coming-soon">Presto Disponibile</p>
-            </div>
             <div onClick={() => handleServiceClick("layout")}>
               <h2>Layout</h2>
+            </div>
+            <div onClick={() => handleServiceClick("formazione")}>
+              <h2>Formazione</h2>
             </div>
           </div>
         </div>
@@ -257,45 +260,45 @@ const ServicesPage = () => {
                 </ul>
               </div>
             )
-                  : index === 2 ? (
-                    <div className="index-1">
-                      <p>{serviceObj[index].bulletTitleFirst}</p>
-                      <p>{serviceObj[index].firstText}</p>
-                      <p>{serviceObj[index].bulletTitleSecond}</p>
-                      <p>{serviceObj[index].secondText}</p>
-                    </div>
-                  )
-                  : index === 3 ? (
-                    <div className="index-1">
+              : index === 2 ? (
+                <div className="index-1">
+                  <p>{serviceObj[index].bulletTitleFirst}</p>
+                  <p>{serviceObj[index].firstText}</p>
+                  <p>{serviceObj[index].bulletTitleSecond}</p>
+                  <p>{serviceObj[index].secondText}</p>
+                </div>
+              )
+                : index === 3 ? (
+                  <div className="index-1">
                     <p>{serviceObj[index].text}</p>
                     <p>{serviceObj[index].bulletTitle}</p>
                     <ul>
-                  {
-                    serviceObj[index].bulletList.map((item, index) => {
-                      return <li key={index}>{item}</li>
-                    })
-                  }
-                </ul>
-                    </div>
-            ) 
-                : (index === 4 || index === 5) ? (
+                      {
+                        serviceObj[index].bulletList.map((item, index) => {
+                          return <li key={index}>{item}</li>
+                        })
+                      }
+                    </ul>
+                  </div>
+                )
+                  : (index === 4 || index === 5) ? (
                     <div className="index-1">
                       <p>{serviceObj[index].firstP}</p>
                       <p>{serviceObj[index].secondP}</p>
                       <p>{serviceObj[index].bulletTitle}</p>
                       <p>{serviceObj[index].thirdP}</p>
                     </div>
-                )
+                  )
 
-                : index === 6 ? (
-                  <div className="index-1">
-                    <p>{serviceObj[index].firstP}</p>
-                  </div>
-              )
+                    : index === 6 ? (
+                      <div className="index-1">
+                        <p>{serviceObj[index].firstP}</p>
+                      </div>
+                    )
 
-              : (
-                <p>{serviceObj[index].text}</p>
-              )}
+                      : (
+                        <p>{serviceObj[index].text}</p>
+                      )}
             <p className="arrow-p">Usa le frecce per esplorare i diversi servizi</p>
             <div className="arrow-wood-container">
               <button

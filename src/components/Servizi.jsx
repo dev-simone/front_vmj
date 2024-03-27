@@ -18,10 +18,13 @@ const Servizi = () => {
       >
         <p>Allestimento Interni</p>
       </Link>
-      <div className="link-to-service flex-column">
+      <Link
+        to="/services#ancora"
+        state={{ service: "formazione" }}
+        className="link-to-service"
+      >
         <p className="formazione">Formazione</p>
-        <p className="coming-soon">Presto Disponibile</p>
-      </div>
+      </Link>
       <Link
         to="/services#ancora"
         state={{ service: "layout" }}

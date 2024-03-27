@@ -48,7 +48,6 @@ export { default as serviziCartellino } from "./servizi/servizi-cartellino.webp"
 export { default as cartellinoMobile } from "./servizi/cartellino-mobile.webp";
 export { default as serviziSfondo } from "./servizi/servizi-sfondo.webp";
 export { default as allestimentoPuntoVendita } from "./servizi/allestimentoPuntoVendita.webp";
-export { default as layout } from "./servizi/layoutCartellino.webp";
 // allestimento vetrine
 export { default as allestimentoVetrine1 } from "./servizi/allestimento-vetrine-sc/allestimentoVetrine2.webp";
 export { default as allestimentoVetrine2 } from "./servizi/allestimento-vetrine-sc/2.webp";
@@ -66,7 +65,7 @@ export { default as layoutVetrine1 } from "./servizi/layout-vetrine-sc/1.webp";
 export { default as layoutVetrine2 } from "./servizi/layout-vetrine-sc/2.webp";
 export { default as layoutVetrine3 } from "./servizi/layout-vetrine-sc/3.webp";
 // formazione
-export {default as formazione } from "./servizi/comingSoon.webp";
+export { default as formazione } from "./servizi/comingSoon.webp";
 
 // blog
 export { default as searchIcon } from "./blog/search-icon.svg";

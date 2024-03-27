@@ -2,12 +2,18 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { searchIcon, manichinoBlog } from "../assets/images";
 import BlogCard from "../components/BlogCard";
+import useAuth from "../hooks/useAuth";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const { setSelectedPage } = useAuth();
+
 
   useEffect(() => {
+    setSelectedPage("blog");
+    sessionStorage.setItem("page", "blog");
+
     window.scrollTo(0, 0);
     const getPosts = async () => {
       try {
