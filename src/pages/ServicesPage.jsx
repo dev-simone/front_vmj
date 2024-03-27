@@ -11,13 +11,9 @@ import {
   allestimentoPuntoVendita1,
   allestimentoPuntoVendita2,
   allestimentoPuntoVendita3,
-  layoutNegozio1,
-  layoutNegozio2,
-  layoutNegozio3,
-  layoutVetrine1,
-  layoutVetrine2,
-  layoutVetrine3,
-  placeholder,
+  layout1,
+  layout2,
+  layout3,
   formazione,
 } from "../assets/images";
 
@@ -95,9 +91,9 @@ const ServicesPage = () => {
       bulletTitleSecond: "LAYOUT VETRINA",
       secondText:
         "Il layout della vetrina rappresenta l’organizzazione delle strutture espositive, dei manichini e del prodotto all’interno dello spazio espositivo. Sulla base degli elementi presenti nella vetrina aiuto il commerciante ad individuare i supporti più adatti per migliorare la presentazione dei prodotti",
-      img1: layoutNegozio1,
-      img2: layoutNegozio2,
-      img3: layoutNegozio3,
+      img1: layout1,
+      img2: layout2,
+      img3: layout3,
     },
 
     {
