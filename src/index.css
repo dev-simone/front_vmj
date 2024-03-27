@@ -1317,9 +1317,9 @@ select {
   z-index: 100;
 }
 
-.services-second-section .img-container .img-container--img::before,
 .services-second-section .img-container img,
-.services-second-section .img-container .img-container--img::after {
+.services-second-section .img-container .img-container--img::after,
+.services-second-section .img-container .img-container--img::before {
   position: absolute;
   top: 1rem;
   left: 50%;
@@ -1473,9 +1473,9 @@ select {
     margin-top: 2rem;
   }
 
-  .services-second-section .img-container .img-container--img::before,
   .services-second-section .img-container img,
-  .services-second-section .img-container .img-container--img::after {
+  .services-second-section .img-container .img-container--img::after,
+  .services-second-section .img-container .img-container--img::before {
     left: 0.85rem;
     width: 320px;
     height: 320px;
