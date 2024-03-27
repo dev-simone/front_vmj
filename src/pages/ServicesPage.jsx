@@ -85,7 +85,10 @@ const ServicesPage = () => {
     {
       title: "Organizzazione ",
       titleSpan: "layout",
-      text: "Il layout rappresenta l’organizzazione di strutture e prodotto nell'area espositiva, la cui funzione è quella di favorire l'interazione tra cliente e offerta, migliorandone l'attrattività e la comunicazione. Attraverso l'analisi e la riorganizzazione degli spazi, aiuto ad ottimizzare la disposizione degli arredi esistenti o a valutare l’inserimento di nuove strutture espositive per sfruttare in modo produttivo l’area di vendita",
+      bulletTitleFirst: "LAYOUT NEGOZIO",
+      firstText: "Il layout rappresenta l’organizzazione di strutture e prodotto nell'area espositiva, la cui funzione è quella di favorire l'interazione tra cliente e offerta, migliorandone l'attrattività e la comunicazione. Attraverso l'analisi e la riorganizzazione degli spazi, aiuto ad ottimizzare la disposizione degli arredi esistenti o a valutare l’inserimento di nuove strutture espositive per sfruttare in modo produttivo l’area di vendita",
+      bulletTitleSecond: "LAYOUT VETRINA",
+      secondText: "Il layout della vetrina rappresenta l’organizzazione delle strutture espositive, dei manichini e del prodotto all’interno dello spazio espositivo. Sulla base degli elementi presenti nella vetrina aiuto il commerciante ad individuare i supporti più adatti per migliorare la presentazione dei prodotti",
       img1: layoutNegozio1,
       img2: layoutNegozio2,
       img3: layoutNegozio3,
@@ -235,6 +238,15 @@ const ServicesPage = () => {
                   }
                 </ul>
               </div>
+            )
+                  : index === 2 ? (
+                    <div className="index-2">
+                      <p>{serviceObj[index].bulletTitleFirst}</p>
+                      <p>{serviceObj[index].firstText}</p>
+                      <p>{serviceObj[index].bulletTitleSecond}</p>
+                      <p>{serviceObj[index].secondText}</p>
+                    </div>
+
             ) : index === 5 ? (
               <ul className="principal-content-bullet-list">
                 {serviceObj[index].bulleList.map((item) => {
