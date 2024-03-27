@@ -68,9 +68,12 @@ const ServicesPage = () => {
       title: "Consulenza e allestimento del punto ve",
       titleSpan: "ndita",
       content: {
-        firstP: "In un mercato complesso e iper competitivo, i negozi devono riuscire a creare una narrazione coinvolgente per comunicare in modo efficace con il cliente.",
-        secondP: "Il Visual Merchandising svolge un ruolo cruciale per favorire questo processo, mediante un'esposizione accurata e significativa dei prodotti in vendita.",
-        thirdP: "Metto a disposizione la mia esperienza per aiutare proprietari di negozi e in store staff ad ottimizzare l'organizzazione dell’allestimento in negozio, potenziandone la comunicazione e migliorando il sellout.",
+        firstP:
+          "In un mercato complesso e iper competitivo, i negozi devono riuscire a creare una narrazione coinvolgente per comunicare in modo efficace con il cliente.",
+        secondP:
+          "Il Visual Merchandising svolge un ruolo cruciale per favorire questo processo, mediante un'esposizione accurata e significativa dei prodotti in vendita.",
+        thirdP:
+          "Metto a disposizione la mia esperienza per aiutare proprietari di negozi e in store staff ad ottimizzare l'organizzazione dell’allestimento in negozio, potenziandone la comunicazione e migliorando il sellout.",
         bulletTitle: "Modalità di lavoro:",
         bulletList: [
           "Briefing per una condivisione delle esigenze commerciali del punto vendita",
@@ -87,9 +90,11 @@ const ServicesPage = () => {
       title: "Organizzazione ",
       titleSpan: "layout",
       bulletTitleFirst: "LAYOUT NEGOZIO",
-      firstText: "Il layout rappresenta l’organizzazione di strutture e prodotto nell'area espositiva, la cui funzione è quella di favorire l'interazione tra cliente e offerta, migliorandone l'attrattività e la comunicazione. Attraverso l'analisi e la riorganizzazione degli spazi, aiuto ad ottimizzare la disposizione degli arredi esistenti o a valutare l’inserimento di nuove strutture espositive per sfruttare in modo produttivo l’area di vendita",
+      firstText:
+        "Il layout rappresenta l’organizzazione di strutture e prodotto nell'area espositiva, la cui funzione è quella di favorire l'interazione tra cliente e offerta, migliorandone l'attrattività e la comunicazione. Attraverso l'analisi e la riorganizzazione degli spazi, aiuto ad ottimizzare la disposizione degli arredi esistenti o a valutare l’inserimento di nuove strutture espositive per sfruttare in modo produttivo l’area di vendita",
       bulletTitleSecond: "LAYOUT VETRINA",
-      secondText: "Il layout della vetrina rappresenta l’organizzazione delle strutture espositive, dei manichini e del prodotto all’interno dello spazio espositivo. Sulla base degli elementi presenti nella vetrina aiuto il commerciante ad individuare i supporti più adatti per migliorare la presentazione dei prodotti",
+      secondText:
+        "Il layout della vetrina rappresenta l’organizzazione delle strutture espositive, dei manichini e del prodotto all’interno dello spazio espositivo. Sulla base degli elementi presenti nella vetrina aiuto il commerciante ad individuare i supporti più adatti per migliorare la presentazione dei prodotti",
       img1: layoutNegozio1,
       img2: layoutNegozio2,
       img3: layoutNegozio3,
@@ -113,10 +118,13 @@ const ServicesPage = () => {
     {
       title: "Formazione: Corso di Visual Merch",
       titleSpan: "andising",
-      firstP: "Il percorso proposto si configura come un prezioso alleato nel comprendere le tecniche e gli strumenti più diffusi ed attuali di visual merchandising, approfondendo i concetti fondamentali relativi all'allestimento, sia in vetrina che in negozio.",
-      secondP: "È una proposta formativa completa che, partendo dall’analisi delle principali dinamiche espositive, consente al partecipante di affrontare con consapevolezza leproblematiche quotidiane dell’allestimento, adottando soluzioni esteticamente interessanti e commercialmente efficaci. Materiale di supporto, slide e case history completano l’attività formativa.",
+      firstP:
+        "Il percorso proposto si configura come un prezioso alleato nel comprendere le tecniche e gli strumenti più diffusi ed attuali di visual merchandising, approfondendo i concetti fondamentali relativi all'allestimento, sia in vetrina che in negozio.",
+      secondP:
+        "È una proposta formativa completa che, partendo dall’analisi delle principali dinamiche espositive, consente al partecipante di affrontare con consapevolezza leproblematiche quotidiane dell’allestimento, adottando soluzioni esteticamente interessanti e commercialmente efficaci. Materiale di supporto, slide e case history completano l’attività formativa.",
       bulletTitle: "A CHI E' RIVOLTO",
-      thirdP: "Il corso è rivolto a personale di vendita, commercianti, professionisti del settore che vogliono migliorare o aggiornare le proprie competenze.",
+      thirdP:
+        "Il corso è rivolto a personale di vendita, commercianti, professionisti del settore che vogliono migliorare o aggiornare le proprie competenze.",
       img1: formazione,
       img2: formazione,
       img3: formazione,
@@ -125,10 +133,13 @@ const ServicesPage = () => {
     {
       title: "Formazione: Corso di vetrini",
       titleSpan: "stica",
-      firstP: "La vetrina rappresenta uno potente mezzo pubblicitario il cui ruolo è essenziale non solo per vendere, ma soprattutto per comunicare, attrarre clienti e creare rapporti. Il corso propone una full immersion delle principali tecniche di vetrinistica per gestirne i codici comunicativi secondo una specifica programmazione temporale e istaurando un dialogo continuo con il proprio target.",
-      secondP: "Cosa si rilascia: Materiale di supporto, slide e case history completano l’attività formativa.",
+      firstP:
+        "La vetrina rappresenta uno potente mezzo pubblicitario il cui ruolo è essenziale non solo per vendere, ma soprattutto per comunicare, attrarre clienti e creare rapporti. Il corso propone una full immersion delle principali tecniche di vetrinistica per gestirne i codici comunicativi secondo una specifica programmazione temporale e istaurando un dialogo continuo con il proprio target.",
+      secondP:
+        "Cosa si rilascia: Materiale di supporto, slide e case history completano l’attività formativa.",
       bulletTitle: "A CHI E' RIVOLTO",
-      thirdP: "Il corso è rivolto a personale di vendita, commercianti, professionisti del settore che vogliono migliorare o aggiornare le proprie competenze.",
+      thirdP:
+        "Il corso è rivolto a personale di vendita, commercianti, professionisti del settore che vogliono migliorare o aggiornare le proprie competenze.",
       img1: formazione,
       img2: formazione,
       img3: formazione,
@@ -137,7 +148,8 @@ const ServicesPage = () => {
     {
       title: "Formazione: Punto ven",
       titleSpan: "dita",
-      firstP: "Partendo da un’analisi delle principali problematiche del punto vendita, si definisce con il committente l’attività di formazione appropriata, considerando l’assortimento, lo spazio di vendita e l’area deposito, gli elementi espositivi, le vetrine ed infrastrutture, il personale da coinvolgere. L’approccio formativo, oltre ad un taglio fortemente operativo, è di natura consulenziale, con l’intento di migliorare la gestione dell’esposizione nel punto vendita e, di conseguenza, il sell out.",
+      firstP:
+        "Partendo da un’analisi delle principali problematiche del punto vendita, si definisce con il committente l’attività di formazione appropriata, considerando l’assortimento, lo spazio di vendita e l’area deposito, gli elementi espositivi, le vetrine ed infrastrutture, il personale da coinvolgere. L’approccio formativo, oltre ad un taglio fortemente operativo, è di natura consulenziale, con l’intento di migliorare la gestione dell’esposizione nel punto vendita e, di conseguenza, il sell out.",
       img1: formazione,
       img2: formazione,
       img3: formazione,
@@ -249,56 +261,47 @@ const ServicesPage = () => {
                 <p>{serviceObj[index].content.thirdP}</p>
                 <p>{serviceObj[index].content.bulletTitle}</p>
                 <ul>
-                  {
-                    serviceObj[index].content.bulletList.map((item, index) => {
-                      return <li key={index}>{item}</li>
-                    })
-                  }
+                  {serviceObj[index].content.bulletList.map((item, index) => {
+                    return <li key={index}>{item}</li>;
+                  })}
                 </ul>
               </div>
-            )
-                  : index === 2 ? (
-                    <div className="index-1">
-                      <p>{serviceObj[index].bulletTitleFirst}</p>
-                      <p>{serviceObj[index].firstText}</p>
-                      <p>{serviceObj[index].bulletTitleSecond}</p>
-                      <p>{serviceObj[index].secondText}</p>
-                    </div>
-                  )
-                  : index === 3 ? (
-                    <div className="index-1">
-                    <p>{serviceObj[index].text}</p>
-                    <p>{serviceObj[index].bulletTitle}</p>
-                    <ul>
-                  {
-                    serviceObj[index].bulletList.map((item, index) => {
-                      return <li key={index}>{item}</li>
-                    })
-                  }
-                </ul>
-                    </div>
-            ) 
-                : (index === 4 || index === 5) ? (
-                    <div className="index-1">
-                      <p>{serviceObj[index].firstP}</p>
-                      <p>{serviceObj[index].secondP}</p>
-                      <p>{serviceObj[index].bulletTitle}</p>
-                      <p>{serviceObj[index].thirdP}</p>
-                    </div>
-                )
-
-                : index === 6 ? (
-                  <div className="index-1">
-                    <p>{serviceObj[index].firstP}</p>
-                  </div>
-              )
-
-              : (
-                <div className="index-1">
+            ) : index === 2 ? (
+              <div className="index-1">
+                <p>{serviceObj[index].bulletTitleFirst}</p>
+                <p>{serviceObj[index].firstText}</p>
+                <p>{serviceObj[index].bulletTitleSecond}</p>
+                <p>{serviceObj[index].secondText}</p>
+              </div>
+            ) : index === 3 ? (
+              <div className="index-1">
                 <p>{serviceObj[index].text}</p>
-                </div>
-              )}
-            <p className="arrow-p">Usa le frecce per esplorare i diversi servizi</p>
+                <p>{serviceObj[index].bulletTitle}</p>
+                <ul>
+                  {serviceObj[index].bulletList.map((item, index) => {
+                    return <li key={index}>{item}</li>;
+                  })}
+                </ul>
+              </div>
+            ) : index === 4 || index === 5 ? (
+              <div className="index-1">
+                <p>{serviceObj[index].firstP}</p>
+                <p>{serviceObj[index].secondP}</p>
+                <p>{serviceObj[index].bulletTitle}</p>
+                <p>{serviceObj[index].thirdP}</p>
+              </div>
+            ) : index === 6 ? (
+              <div className="index-1">
+                <p>{serviceObj[index].firstP}</p>
+              </div>
+            ) : (
+              <div className="index-1">
+                <p>{serviceObj[index].text}</p>
+              </div>
+            )}
+            <p className="arrow-p">
+              Usa le frecce per esplorare i diversi servizi
+            </p>
             <div className="arrow-wood-container">
               <button
                 className="arrow-wood-btn"
@@ -338,7 +341,6 @@ const ServicesPage = () => {
                 </svg>
               </button>
             </div>
-
           </div>
           <div className="img-container">
             <div className="img-container--img">
