@@ -294,7 +294,9 @@ const ServicesPage = () => {
               )
 
               : (
+                <div className="index-1">
                 <p>{serviceObj[index].text}</p>
+                </div>
               )}
             <p className="arrow-p">Usa le frecce per esplorare i diversi servizi</p>
             <div className="arrow-wood-container">
