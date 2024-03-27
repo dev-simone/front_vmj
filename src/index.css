@@ -1609,9 +1609,9 @@ select {
     height: 700px;
   }
 
-  .services-second-section .img-container .img-container--img::before,
   .services-second-section .img-container img,
-  .services-second-section .img-container .img-container--img::after {
+  .services-second-section .img-container .img-container--img::after,
+  .services-second-section .img-container .img-container--img::before {
     top: 1.3rem;
     left: 1.2rem;
     width: 570px;
