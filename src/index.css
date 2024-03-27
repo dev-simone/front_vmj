@@ -1229,8 +1229,9 @@ select {
 .services-second-section h1 {
   text-align: center;
   color: hsl(var(--clr-orange));
-  font-size: var(--fs-700);
+  font-size: var(--fs-600);
   margin-top: 2rem;
+  margin-bottom: 1rem;
   line-height: 1.2;
 }
 
@@ -1246,20 +1247,8 @@ select {
   width: 40ch;
 }
 
-.fs-service {
-  width: 20ch !important;
-  font-size: var(--fs-600) !important;
-  margin-bottom: 1rem;
-  margin-inline: auto;
-}
-
 .index-1 p {
   margin-top: 0 !important;
-  font-size: 14px !important;
-}
-
-.index-2 p {
-  margin-top: 1.5rem !important;
   font-size: 14px !important;
 }
 
@@ -1479,12 +1468,6 @@ select {
     flex-direction: row;
   }
 
-  .fs-service {
-    width: 14ch !important;
-    font-size: var(--fs-600) !important;
-    margin-bottom: 1rem;
-  }
-
   .index-1 p {
     margin-top: 0 !important;
     font-size: 14px !important;
@@ -1583,7 +1566,8 @@ select {
   }
 
   .services-second-section h1 {
-    font-size: var(--fs-700);
+    font-size: var(--fs-600);
+    width: 25ch;
     margin-left: 8rem;
   }
 
@@ -1595,10 +1579,6 @@ select {
     font-size: 22px;
     margin-top: 3rem;
     margin-left: 8rem;
-  }
-
-  .fs-service {
-    width: 22ch !important;
   }
 
   .index-1 p {
