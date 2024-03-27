@@ -497,11 +497,6 @@ select {
   background-position: center;
 }
 
-.coming-soon {
-  opacity: 0;
-  width: 0;
-}
-
 @media (min-width: 768px) {
   .grid--home {
     grid-template-columns: repeat(4, 1fr);
@@ -536,14 +531,6 @@ select {
 
   .grid--home .link-to-service:hover {
     transform: scale(1.1);
-
-    & .formazione {
-      opacity: 0;
-    }
-
-    & .coming-soon {
-      opacity: 1;
-    }
   }
 }
 
@@ -807,7 +794,15 @@ select {
 }
 
 .img-center {
-  object-position: right;
+  object-position: 90% 0;
+}
+
+.img-left {
+  object-position: 10% 0;
+}
+
+.img-right {
+  object-position: 0 10%;
 }
 
 .center {
@@ -848,6 +843,10 @@ select {
     width: 40ch;
     font-size: 24px;
   }
+
+  .img-left {
+    object-position: 0 50%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -872,6 +871,15 @@ select {
   .right {
     display: block;
   }
+
+  .img-left {
+    object-position: 20% 0;
+  }
+
+  .img-right {
+    object-position: 40% 10%;
+  }
+
 }
 
 /* -------------------------------- */
@@ -1109,15 +1117,6 @@ select {
   font-size: var(--fs-700);
 }
 
-.services-page p {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  font-size: 13px;
-  font-weight: 500;
-}
-
 .grid--services {
   position: relative;
 }
@@ -1170,18 +1169,6 @@ select {
   cursor: pointer;
 }
 
-.services-card-coming-soon {
-  position: absolute;
-  display: grid;
-  place-content: center;
-  top: 50%;
-  transform: translateY(-50%) !important;
-  font-weight: 700 !important;
-  background-color: hsl(var(--clr-black), 0.5);
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
 .services-card--container div::before {
   content: "";
   position: absolute;
@@ -1196,11 +1183,12 @@ select {
 }
 
 .services-card--container div:nth-child(2) {
-  background: url("./assets/images/servizi/formazione.webp");
+  background: url("./assets/images/servizi/organizzazioneLayout.webp");
+  background-position: center;
 }
 
 .services-card--container div:nth-child(3) {
-  background: url("./assets/images/servizi/layoutCartellino.webp");
+  background: url("./assets/images/servizi/formazione.webp");
 }
 
 .services-card--container div:nth-child(1),

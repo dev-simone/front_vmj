@@ -143,7 +143,7 @@ const AboutMe = () => {
         <div className="left">
           <img src={object[currentIndex].imgLeft} id="imgS0" alt="img" />
           <img src={object[currentIndex].imgLeft} id="imgS1" alt="img" />
-          <img src={object[currentIndex].imgLeft} id="imgS2" alt="img" />
+          <img className={`${currentIndex === 2 ? "img-left" : ""}`} src={object[currentIndex].imgLeft} id="imgS2" alt="img" />
         </div>
         <div className="center">
           <img src={sfondoLegno} className="sfondo-legno" alt="img" />
@@ -161,7 +161,7 @@ const AboutMe = () => {
             className={`${currentIndex === 1 ? "img-center" : ""}`}
             alt="img"
           />
-          <img src={object[currentIndex].imgRight} id="imgD2" alt="img" />
+          <img className={`${currentIndex === 2 ? "img-right" : ""}`} src={object[currentIndex].imgRight} id="imgD2" alt="img" />
         </div>
       </div>
     </>
