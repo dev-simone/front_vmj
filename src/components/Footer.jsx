@@ -23,7 +23,6 @@ const Footer = () => {
     sessionStorage.setItem("page", page);
   };
 
-
   const openSidebarContacts = contextSafe(() => {
     gsap.to(".contacts--sidebar", {
       x: 0,
@@ -52,21 +51,39 @@ const Footer = () => {
           <div className="info--p-iva-terms-container">
             <a href="">Privacy Policy</a>
           </div>
-          <p>Copyright© 2024 - <a href="https://www.alias-development.com" target="_blank">Alias Development</a>. All Rights Reserved.</p>
+          <p>
+            Copyright© 2024 -{" "}
+            <a href="https://www.alias-development.com" target="_blank">
+              Alias Development
+            </a>
+            . All Rights Reserved.
+          </p>
         </div>
       </div>
       <div className="footer--second-block">
         <div>
           <h2>Navigazione</h2>
-          <Link to="/" className="footer--nav-link" onClick={() => handleNavLinkClick("/")}>
+          <Link
+            to="/"
+            className="footer--nav-link"
+            onClick={() => handleNavLinkClick("/")}
+          >
             <img src={homeIcon} alt="home" />
             <p>Home</p>
           </Link>
-          <Link to="/services" className="footer--nav-link" onClick={() => handleNavLinkClick("services")} >
+          <Link
+            to="/services"
+            className="footer--nav-link"
+            onClick={() => handleNavLinkClick("services")}
+          >
             <img src={servicesIcon} alt="Servizi" />
             <p>Servizi</p>
           </Link>
-          <Link to="/blog" className="footer--nav-link" onClick={() => handleNavLinkClick("blog")}>
+          <Link
+            to="/blog"
+            className="footer--nav-link"
+            onClick={() => handleNavLinkClick("blog")}
+          >
             <img src={blogIcon} alt="Blog" />
             <p>Blog</p>
           </Link>
@@ -84,13 +101,21 @@ const Footer = () => {
           </div>
           <div className="footer--contact-info">
             <img src={contactsEmailIcon} alt="email" />
-            <a href="mailto:info@visualmerchandisingjourney.it">info@visualmerchandisingjourney.it</a>
+            <a href="mailto:info@visualmerchandisingjourney.it">
+              info@visualmerchandisingjourney.it
+            </a>
           </div>
           <div className="footer--socials-container">
-            <a href="https://www.facebook.com/VisualMerchandisingJourney" target="_blank">
+            <a
+              href="https://www.facebook.com/VisualMerchandisingJourney"
+              target="_blank"
+            >
               <img src={facebookIcon} alt="facebook" />
             </a>
-            <a href="https://www.instagram.com/visualmerchandisingjourney?igsh=MXZidmFiZWh5a2l1MQ==" target="_blank">
+            <a
+              href="https://www.instagram.com/visualmerchandisingjourney?igsh=MXZidmFiZWh5a2l1MQ=="
+              target="_blank"
+            >
               <img src={instagramIcon} alt="instagram" />
             </a>
             <a href="https://wa.me/3355722349" target="_blank">
