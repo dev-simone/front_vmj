@@ -1476,10 +1476,10 @@ select {
   .services-second-section .img-container .img-container--img::before,
   .services-second-section .img-container img,
   .services-second-section .img-container .img-container--img::after {
-    left: 0.85rem;
-    width: 320px;
-    height: 320px;
-    transform: translateX(0);
+    left: 0.85rem !important;
+    width: 320px !important;
+    height: 320px !important;
+    transform: translateX(0) !important;
   }
 
   .services-second-section .img-container .dots-container {
@@ -1612,11 +1612,11 @@ select {
   .services-second-section .img-container .img-container--img::before,
   .services-second-section .img-container img,
   .services-second-section .img-container .img-container--img::after {
-    top: 1.3rem;
-    left: 1.2rem;
-    width: 570px;
-    height: 580px;
-    transform: translateX(0);
+    top: 1.3rem !important;
+    left: 1.2rem !important;
+    width: 570px !important;
+    height: 580px !important;
+    transform: translateX(0) !important;
   }
 
   .services-second-section .img-container .dots-container {
