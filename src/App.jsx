@@ -29,6 +29,7 @@ const PersonalArea = React.lazy(() => import("./pages/PersonalArea"));
 const Article = React.lazy(() => import("./pages/Article"));
 const ArticleHandler = React.lazy(() => import("./pages/ArticleHandler"));
 const NotFound = React.lazy(() => import("./pages/NotFound.jsx"));
+const PrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy.jsx"));
 
 import PrivateRoute from "./components/PrivateRoute";
 
@@ -43,6 +44,7 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/login" element={<Login />} />
           <Route path="/article/:id" element={<Article />} />
+          <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
 
           {/**ROUTES TO PROTECT */}
           <Route element={<PrivateRoute />}>

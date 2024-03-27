@@ -49,7 +49,9 @@ const Footer = () => {
         <div className="info-container">
           <p>P.IVA: 06151540652</p>
           <div className="info--p-iva-terms-container">
-            <a href="">Privacy Policy</a>
+            <Link to="/privacyPolicy" className="">
+              Privacy Policy
+            </Link>
           </div>
           <p>
             Copyright© 2024 -{" "}

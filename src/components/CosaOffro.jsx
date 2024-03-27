@@ -38,35 +38,24 @@ const CosaOffro = () => {
           <ul className="text-black">
             <li>
               <img src={checkIcon} alt="check" />
-              <p>
-                Consulenza e allestimento vetrine
-              </p>
+              <p>Consulenza e allestimento vetrine</p>
             </li>
             <li>
               <img src={checkIcon} alt="check" />
-              <p>
-                Consulenza e allestimento del punto vendita
-              </p>
+              <p>Consulenza e allestimento del punto vendita</p>
             </li>
             <li>
               <img src={checkIcon} alt="check" />
-              <p>
-                Organizzazione layout negozio
-              </p>
+              <p>Organizzazione layout negozio</p>
             </li>
             <li>
               <img src={checkIcon} alt="check" />
-              <p>
-                Organizzazione layout vetrine
-              </p>
+              <p>Organizzazione layout vetrine</p>
             </li>
             <li>
               <img src={checkIcon} alt="check" />
-              <p>
-                Formazione
-              </p>
+              <p>Formazione</p>
             </li>
-
           </ul>
         </div>
         <div className="services-link">
