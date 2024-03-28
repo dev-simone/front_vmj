@@ -99,7 +99,7 @@ const Footer = () => {
           <h2>Contatti</h2>
           <div className="footer--contact-info">
             <img src={phoneIcon} alt="phone" />
-            <p>+39 335 572 2349</p>
+            <a href="tel:+39 335 572 2349">+39 335 572 2349</a>
           </div>
           <div className="footer--contact-info">
             <img src={contactsEmailIcon} alt="email" />
