@@ -16,6 +16,9 @@ import {
   layout2,
   layout3,
   formazione,
+  formazionePV1,
+  formazionePV2,
+  formazionePV3,
 } from "../assets/images";
 
 const ServicesPage = () => {
@@ -150,9 +153,9 @@ const ServicesPage = () => {
       titleSpan: "dita",
       firstP:
         "Partendo da un’analisi delle principali problematiche del punto vendita, si definisce con il committente l’attività di formazione appropriata, considerando l’assortimento, lo spazio di vendita e l’area deposito, gli elementi espositivi, le vetrine ed infrastrutture, il personale da coinvolgere. L’approccio formativo, oltre ad un taglio fortemente operativo, è di natura consulenziale, con l’intento di migliorare la gestione dell’esposizione nel punto vendita e, di conseguenza, il sell out.",
-      img1: formazione,
-      img2: formazione,
-      img3: formazione,
+      img1: formazionePV1,
+      img2: formazionePV2,
+      img3: formazionePV3,
     },
   ];
 

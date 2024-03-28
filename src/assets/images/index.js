@@ -65,6 +65,11 @@ export { default as layout3 } from "./servizi/layout-negozio-sc/layout3.webp";
 // formazione
 export { default as formazione } from "./servizi/comingSoon.webp";
 
+// formazione: punto vendita
+export { default as formazionePV1 } from "./servizi/formazionePV1.webp";
+export { default as formazionePV2 } from "./servizi/formazionePV2.webp";
+export { default as formazionePV3 } from "./servizi/formazionePV3.webp";
+
 // blog
 export { default as searchIcon } from "./blog/search-icon.svg";
 export { default as manichinoBlog } from "./blog/manichino-blog.webp";
