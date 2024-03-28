@@ -9,6 +9,7 @@ import useAuth from "../hooks/useAuth";
 
 const Home = () => {
   const { setSelectedPage } = useAuth();
+
   useEffect(() => {
     setSelectedPage("/");
     sessionStorage.setItem("page", "/");

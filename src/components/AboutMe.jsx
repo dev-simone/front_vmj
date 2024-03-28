@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
@@ -44,6 +44,10 @@ const AboutMe = () => {
       imgRight: thirdSlideRight,
     },
   ];
+
+  useEffect(() => {
+    setCurrentIndex(0);
+  }, [])
 
   useGSAP(() => {
     const tl0 = gsap
@@ -144,14 +148,15 @@ const AboutMe = () => {
       },
     });
   });
+
+  console.log(currentIndex);
   return (
     <>
       <div className="about-me grid--about" ref={container}>
         <div className="left">
-          <img src={object[currentIndex].imgLeft} id="imgS0" alt="img" />
+          <img className={`${currentIndex === 0 ? "img-left" : ""}`} src={object[currentIndex].imgLeft} id="imgS0" alt="img" />
           <img src={object[currentIndex].imgLeft} id="imgS1" alt="img" />
           <img
-            className={`${currentIndex === 2 ? "img-left" : ""}`}
             src={object[currentIndex].imgLeft}
             id="imgS2"
             alt="img"
@@ -162,7 +167,7 @@ const AboutMe = () => {
           <img src={luci} className="luci" alt="img" />
           <div>
             <h2 className="fs-700">{object[currentIndex].title}</h2>
-            <div>
+            {currentIndex === 2 ? (
               <p>
                 {object[currentIndex].text}
                 {object[currentIndex].firstText}
@@ -173,11 +178,13 @@ const AboutMe = () => {
                 <strong>{object[currentIndex].fourthTextStrong}</strong>
                 {object[currentIndex].thirdText}
               </p>
-            </div>
+            ) : (
+              <p>{object[currentIndex].text}</p>
+            )}
           </div>
         </div>
         <div className="right">
-          <img src={object[currentIndex].imgRight} id="imgD0" alt="img" />
+          <img className={`${currentIndex === 0 ? "img-right" : ""}`} src={object[currentIndex].imgRight} id="imgD0" alt="img" />
           <img
             src={object[currentIndex].imgRight}
             id="imgD1"
@@ -185,7 +192,6 @@ const AboutMe = () => {
             alt="img"
           />
           <img
-            className={`${currentIndex === 2 ? "img-right" : ""}`}
             src={object[currentIndex].imgRight}
             id="imgD2"
             alt="img"
