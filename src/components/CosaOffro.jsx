@@ -2,7 +2,7 @@ import gsap from "gsap";
 import { Link } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { checkIcon, manichino, arrow } from "../assets/images";
+import { checkIcon, manichino, arrow, downArrow } from "../assets/images";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -57,10 +57,16 @@ const CosaOffro = () => {
               <p>Formazione</p>
             </li>
           </ul>
-        </div>
-        <div className="services-link">
-          <img src={arrow} alt="arrow" />
-          <Link to="/services">Vai alla pagina dei servizi</Link>
+          <div className="services-link">
+            <ul>
+              <li>
+                <img src={downArrow} alt="arrow" />
+                <Link to="/services">Continua con la navigazione</Link>
+                <img src={arrow} alt="arrow" />
+                <Link to="/services">Vai alla pagina dei servizi</Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <img src={manichino} id="manichino-cosa-offro" alt="manichino" />

@@ -25,6 +25,7 @@ export { default as instagramIcon } from "./contacts/instagram-icon.svg";
 export { default as whatsappIcon } from "./contacts/whatsapp-icon.svg";
 export { default as facebookIcon } from "./contacts/facebook-icon.svg";
 export { default as contactsEmailIcon } from "./contacts/contacts-email-icon.svg";
+export { default as downArrow } from "./downArrow.svg";
 
 // images cosa offro
 export { default as manichino } from "./cosa-offro/manichino-cosa-offro.webp";
