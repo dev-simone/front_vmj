@@ -107,7 +107,7 @@ const ServicesPage = () => {
       title: "Form",
       titleSpan: "azione",
       text: "L'identità visiva e l'ambiente coinvolgente di un punto vendita richiedono competenze che vanno ben oltre la mera creatività: è cruciale acquisire la conoscenza delle tecniche espositive, in vetrina e in store, per differenziarsi dalla concorrenza e ottenere vantaggio competitivo. Le sessioni formative sono personalizzate e offrono un supporto operativo per commercianti e operatori del settore retail",
-      bulletTitle: "COSA IMPARERAI",
+      bulletTitle: "PRINCIPALI ARGOMENTI",
       bulletList: [
         "Acquisizione degli strumenti per razionalizzare gli spazi espositivi",
         "Conoscenza delle tecniche per valorizzare i prodotti nel punto vendita",
@@ -268,7 +268,6 @@ const ServicesPage = () => {
                   })}
                 </ul>
               </div>
-
             ) : index === 2 ? (
               <div className="index-1">
                 <p>{serviceObj[index].bulletTitleFirst}</p>
