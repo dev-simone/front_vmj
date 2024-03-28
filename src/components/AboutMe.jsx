@@ -32,7 +32,14 @@ const AboutMe = () => {
     },
     {
       title: "Cosa offro",
-      text: "Metto a disposizione di commercianti, imprenditori, agenzie retail e istituti di formazione le competenze acquisite nel mio percorso professionale per fornire supporto e collaborazione, sia dal punto di vista formativo che operativo.",
+      firstText: "Metto a disposizione di ",
+      firstTextStrong: "commericanti, ",
+      secondTextStrong: "imprenditori, ",
+      thirdTextStrong: "agenzie retail ",
+      secondText: "e ",
+      fourthTextStrong: "istituti di formazione ",
+      thirdText:
+        "le competenze acquisite nel mio percorso professionale per fornire supporto e collaborazione, sia dal punto di vista formativo che operativo.",
       imgLeft: thirdSlideLeft,
       imgRight: thirdSlideRight,
     },
@@ -143,14 +150,30 @@ const AboutMe = () => {
         <div className="left">
           <img src={object[currentIndex].imgLeft} id="imgS0" alt="img" />
           <img src={object[currentIndex].imgLeft} id="imgS1" alt="img" />
-          <img className={`${currentIndex === 2 ? "img-left" : ""}`} src={object[currentIndex].imgLeft} id="imgS2" alt="img" />
+          <img
+            className={`${currentIndex === 2 ? "img-left" : ""}`}
+            src={object[currentIndex].imgLeft}
+            id="imgS2"
+            alt="img"
+          />
         </div>
         <div className="center">
           <img src={sfondoLegno} className="sfondo-legno" alt="img" />
           <img src={luci} className="luci" alt="img" />
           <div>
             <h2 className="fs-700">{object[currentIndex].title}</h2>
-            <p>{object[currentIndex].text}</p>
+            <div>
+              <p>
+                {object[currentIndex].text}
+                {object[currentIndex].firstText}
+                <strong>{object[currentIndex].firstTextStrong}</strong>
+                <strong>{object[currentIndex].secondTextStrong}</strong>
+                <strong>{object[currentIndex].thirdTextStrong}</strong>
+                {object[currentIndex].secondText}
+                <strong>{object[currentIndex].fourthTextStrong}</strong>
+                {object[currentIndex].thirdText}
+              </p>
+            </div>
           </div>
         </div>
         <div className="right">
@@ -161,7 +184,12 @@ const AboutMe = () => {
             className={`${currentIndex === 1 ? "img-center" : ""}`}
             alt="img"
           />
-          <img className={`${currentIndex === 2 ? "img-right" : ""}`} src={object[currentIndex].imgRight} id="imgD2" alt="img" />
+          <img
+            className={`${currentIndex === 2 ? "img-right" : ""}`}
+            src={object[currentIndex].imgRight}
+            id="imgD2"
+            alt="img"
+          />
         </div>
       </div>
     </>
