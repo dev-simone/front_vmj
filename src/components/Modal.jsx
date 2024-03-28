@@ -8,6 +8,7 @@ const Modal = ({ setToggleModal, handleDeleteButton }) => {
     setToggleModal(false);
     navigate("/personal-area");
   };
+
   return (
     <div className="modal">
       <div className="modal-container">
