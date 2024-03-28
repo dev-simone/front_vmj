@@ -1,4 +1,5 @@
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
 import {
   closeIcon,
@@ -47,7 +48,9 @@ const Contacts = () => {
           </div>
           <div className="contacts--icons-container">
             <img src={contactsEmailIcon} alt="email" />
-            <a href="mailto:info@visualmerchandisingjourney.it">Inviami una mail</a>
+            <a href="mailto:info@visualmerchandisingjourney.it">
+              Inviami una mail
+            </a>
           </div>
         </div>
 
@@ -62,21 +65,35 @@ const Contacts = () => {
         <div className="contacts--email-phone-container">
           <div className="contacts--icons-container">
             <img src={instagramIcon} alt="instagram" />
-            <a href="https://www.instagram.com/visualmerchandisingjourney?igsh=MXZidmFiZWh5a2l1MQ==" target="_blank">Instagram</a>
+            <a
+              href="https://www.instagram.com/visualmerchandisingjourney?igsh=MXZidmFiZWh5a2l1MQ=="
+              target="_blank"
+            >
+              Instagram
+            </a>
           </div>
           <div className="contacts--icons-container">
             <img src={whatsappIcon} alt="whatsApp" />
-            <a href="https://wa.me/3355722349" target="_blank">WhatsApp</a>
+            <a href="https://wa.me/3355722349" target="_blank">
+              WhatsApp
+            </a>
           </div>
           <div className="contacts--icons-container">
             <img src={facebookIcon} alt="facebook" />
-            <a href="https://www.facebook.com/VisualMerchandisingJourney" target="_blank">Facebook</a>
+            <a
+              href="https://www.facebook.com/VisualMerchandisingJourney"
+              target="_blank"
+            >
+              Facebook
+            </a>
           </div>
         </div>
 
         <div className="contacts--faq">
           <h2>Serve aiuto?</h2>
-          <a href="">Privacy Policy</a>
+          <Link to="/privacyPolicy" className="">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </div>
