@@ -2811,7 +2811,8 @@ select {
   }
 }
 
-.modal-saved--btn {
+.modal-saved--btn,
+.modal-back--btn {
   margin-inline: auto;
   margin-top: 2.5rem;
   width: 200px;
@@ -2823,6 +2824,10 @@ select {
   color: white;
   box-shadow: 0 4px 10px hsl(var(--clr-black), 0.5);
   background-color: #51d500;
+}
+
+.modal-back--btn {
+  background: hsl(var(--clr-orange));
 }
 
 /* -------------------------------- */

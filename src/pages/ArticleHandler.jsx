@@ -1,10 +1,12 @@
 import { useRef, useState, useEffect } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
+import Compressor from "compressorjs";
 import axios from "axios";
 import { placeholder, arrow, addImgIcon } from "../assets/images";
 import useAuth from "../hooks/useAuth";
 import Modal from "../components/Modal";
 import ModalSaved from "../components/ModalSaved";
+import ModalBack from "../components/ModalBack";
 
 import {
   useEditor,
@@ -43,6 +45,7 @@ const ArticleHandler = () => {
   const [data, setData] = useState({});
   const [toggleModal, setToggleModal] = useState(false);
   const [toggleModalSaved, setToggleModalSaved] = useState(false);
+  const [toggleModalBack, setToggleModalBack] = useState(false);
   const editorInsertImageRef = useRef(null);
   const imagePickerRef = useRef();
 
@@ -126,8 +129,9 @@ const ArticleHandler = () => {
     }
   }, [id, navigate, editor, article]);
 
-  const handleBackClick = () => {
-    navigate("/personal-area");
+  const handleBackClick = (e) => {
+    e.preventDefault();
+    setToggleModalBack(true);
   };
 
   const handleInsertEditorImage = () => {
@@ -136,7 +140,6 @@ const ArticleHandler = () => {
 
   const handleHeroFileSelect = (e) => {
     if (e.target.files && e.target.files[0]) {
-      // Imposta l'immagine per l'anteprima
       const img = URL.createObjectURL(e.target.files[0]);
       setData({ ...data, imagePath: img, imgFile: e.target.files[0] });
     }
@@ -145,14 +148,23 @@ const ArticleHandler = () => {
   const handleFileSelect = (event) => {
     const file = event.target.files[0];
     if (file) {
-      const reader = new FileReader();
-      reader.onload = (readerEvent) => {
-        const src = readerEvent.target.result;
-        editor.chain().focus().setImage({ src }).run();
-      };
-      reader.readAsDataURL(file);
+      new Compressor(file, {
+        quality: 0.7,
+        success(result) {
+          const reader = new FileReader();
+          reader.onload = (readerEvent) => {
+            const src = readerEvent.target.result;
+            editor.chain().focus().setImage({ src }).run();
+          };
+          reader.readAsDataURL(result);
+        },
+        error(err) {
+          console.error(err.message);
+        },
+      });
     }
   };
+
 
   const handleImagePickerClick = (e) => {
     e.preventDefault();
@@ -174,43 +186,48 @@ const ArticleHandler = () => {
     console.log(editor.getHTML());
 
     if (data.imgFile) {
-      formData.append("image", data.imgFile);
-    }
-
-
-    if (!article && !id) {
-      try {
-        const response = await axios.post("/posts/create", formData, {
-          headers: {
-            "Content-Type": "multipart/form-data",
-            "auth-token": authToken,
-          },
-        });
-        if (response.status === 201) {
-          setToggleModalSaved(true);
-        }
-      } catch (error) {
-        console.error(error);
-      }
+      new Compressor(data.imgFile, {
+        quality: 0.6,
+        success(result) {
+          formData.append("image", result);
+          sendFormData(formData);
+        },
+        error(err) {
+          console.error(err.message);
+        },
+      });
     } else {
-      try {
-        const response = await axios.post(`/posts/update/${id}`, formData, {
-          headers: {
-            "Content-Type": "multipart/form-data",
-            "auth-token": authToken,
-          },
-        });
-        setToggleModalSaved(true);
-      } catch (error) {
-        console.error(error);
-      }
+      sendFormData(formData);
     }
   };
+
+  const sendFormData = async (formData) => {
+    const url = article && id ? `/posts/update/${id}` : "/posts/create";
+
+    try {
+      const response = await axios.post(url, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+          "auth-token": authToken,
+        },
+      });
+      if (response.status === 201) {
+        setToggleModalSaved(true);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleToggleDeleteModal = (e) => {
+    e.preventDefault();
+    setToggleModal(true);
+  }
 
   const handleDeleteButton = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
+      await axios.post(
         `/posts/delete/${article._id}`,
         {},
         {
@@ -220,12 +237,12 @@ const ArticleHandler = () => {
         }
 
       );
+      setToggleModal(false);
       navigate("/personal-area");
     } catch (error) {
       console.error(error);
     }
   };
-
 
   return (
     <div className="article-handler--page">
@@ -234,6 +251,7 @@ const ArticleHandler = () => {
           <img src={arrow} alt="" />
           <p>indietro</p>
         </button>
+        {toggleModalBack && <ModalBack setToggleModalBack={setToggleModalBack} />}
       </div>
 
       <form>
@@ -276,25 +294,27 @@ const ArticleHandler = () => {
               </svg>
               <p>Salva</p>
             </button>
-            <button className="delete--btn" onClick={handleDeleteButton}>
-              <svg
-                className="delete-btn--icon"
-                width="60"
-                height="60"
-                viewBox="0 0 60 60"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="30" cy="30" r="30" fill="white" />
-                <path
-                  d="M40 20L20 40M40 40L20 20"
-                  stroke="#FF8282"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                />
-              </svg>
-              <p>Elimina</p>
-            </button>
+            {id && (
+              <button className="delete--btn" onClick={handleToggleDeleteModal}>
+                <svg
+                  className="delete-btn--icon"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="30" cy="30" r="30" fill="white" />
+                  <path
+                    d="M40 20L20 40M40 40L20 20"
+                    stroke="#FF8282"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                  />
+                </svg>
+                <p>Elimina</p>
+              </button>
+            )}
           </div>
         </div>
 
@@ -362,7 +382,9 @@ const ArticleHandler = () => {
 
         <EditorContent editor={editor} className="editor-content" />
       </form>
-      {toggleModal && <Modal />}
+      {toggleModal && (
+        <Modal setToggleModal={setToggleModal} handleDeleteButton={handleDeleteButton} />
+      )}
       {toggleModalSaved && (
         <ModalSaved setToggleModalSaved={setToggleModalSaved} />
       )}

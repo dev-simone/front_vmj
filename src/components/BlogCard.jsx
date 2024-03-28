@@ -20,7 +20,7 @@ const BlogCard = ({ article, personalArea, removePostFromState }) => {
   const handleDeleteButton = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
+      await axios.post(
         `/posts/delete/${article._id}`,
         {},
         {
