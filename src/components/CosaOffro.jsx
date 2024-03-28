@@ -61,7 +61,7 @@ const CosaOffro = () => {
             <ul>
               <li>
                 <img src={downArrow} alt="arrow" />
-                <Link to="/services">Continua con la navigazione</Link>
+                <a href="#quote_anchor">Continua con la navigazione</a>
                 <img src={arrow} alt="arrow" />
                 <Link to="/services">Vai alla pagina dei servizi</Link>
               </li>
