@@ -39,12 +39,12 @@ const Contacts = () => {
         <h1>Contattami</h1>
         <p>
           Sono qui per soddisfare ogni tua richiesta e per far fronte a
-          qualsiasi tua esigenza
+          qualsiasi tua esigenza.
         </p>
         <div className="contacts--email-phone-container">
           <div className="contacts--icons-container">
             <img src={phoneIcon} alt="phone" />
-            <p>+39 335 572 2349</p>
+            <a href="tel:+39 335 5722349">+39 335 572 2349</a>
           </div>
           <div className="contacts--icons-container">
             <img src={contactsEmailIcon} alt="email" />
@@ -58,7 +58,7 @@ const Contacts = () => {
           <h2>Canali Social</h2>
           <p>
             Dai un’occhiata ai miei canali social potresti trovare lì la
-            risposta alle tue domande
+            risposta alle tue domande.
           </p>
         </div>
 
