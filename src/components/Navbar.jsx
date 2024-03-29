@@ -72,7 +72,7 @@ const Navbar = () => {
           <img src={logo} id="#logo" alt="logo" />
           <div className="text-black">
             <p>Visual Merchandising Journey</p>
-            <p className="text-slateBlueGray">Di Andrea Memmolo</p>
+            <p className="text-slateBlueGray">di Andrea Memmolo</p>
           </div>
         </div>
         <ul>
@@ -161,7 +161,7 @@ const Navbar = () => {
           </Link>
           <div className="ff-lufga text-black">
             <p>Visual Merchandising Journey</p>
-            <p className="text-slateBlueGray">Di Andrea Memmolo</p>
+            <p className="text-slateBlueGray">di Andrea Memmolo</p>
           </div>
         </div>
         <div className="flex">
@@ -199,7 +199,10 @@ const Navbar = () => {
               </button>
             </li>
           </ul>
-          <Link to={authToken ? "/personal-area" : "/login"} onClick={() => handleNavLinkClick("login")}>
+          <Link
+            to={authToken ? "/personal-area" : "/login"}
+            onClick={() => handleNavLinkClick("login")}
+          >
             <svg
               width="25"
               height="28"
