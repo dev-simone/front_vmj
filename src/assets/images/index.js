@@ -23,6 +23,8 @@ export { default as addImgIcon } from "./personal-area/add-img-icon.svg";
 export { default as phoneIcon } from "./contacts/phone-icon.svg";
 export { default as instagramIcon } from "./contacts/instagram-icon.svg";
 export { default as whatsappIcon } from "./contacts/whatsapp-icon.svg";
+export { default as whatsappNotFilledIcon } from "./contacts/whatsapp-not-filled-icon.svg";
+export { default as documentIcon } from "./contacts/document-icon.svg";
 export { default as facebookIcon } from "./contacts/facebook-icon.svg";
 export { default as contactsEmailIcon } from "./contacts/contacts-email-icon.svg";
 export { default as downArrow } from "./downArrow.svg";
