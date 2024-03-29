@@ -76,7 +76,7 @@ const ServicesPage = () => {
         secondP:
           "Il Visual Merchandising svolge un ruolo cruciale per favorire questo processo, mediante un'esposizione accurata e significativa dei prodotti in vendita.",
         thirdP:
-          "Metto a disposizione la mia esperienza per aiutare proprietari di negozi e in store staff ad ottimizzare l'organizzazione dell’allestimento in negozio, potenziandone la comunicazione e migliorando il sellout.",
+          "Metto a disposizione la mia esperienza per aiutare proprietari di negozi e in store staff ad ottimizzare l'organizzazione dell’allestimento in negozio, potenziandone la comunicazione e migliorando il sell-out.",
         bulletTitle: "Modalità di lavoro:",
         bulletList: [
           "Briefing per una condivisione delle esigenze commerciali del punto vendita;",
