@@ -6,8 +6,9 @@ import {
   phoneIcon,
   contactsEmailIcon,
   instagramIcon,
-  whatsappIcon,
+  whatsappNotFilledIcon,
   facebookIcon,
+  documentIcon,
 } from "../assets/images";
 
 const Contacts = () => {
@@ -36,7 +37,7 @@ const Contacts = () => {
           alt="close"
           onClick={closeSidebarContacts}
         />
-        <h1>Contattami</h1>
+        <h1>Contatti</h1>
         <p>
           Sono a disposizione per fornire maggiori approfondimenti sui servizi
           offerti.
@@ -45,6 +46,12 @@ const Contacts = () => {
           <div className="contacts--icons-container">
             <img src={phoneIcon} alt="phone" />
             <a href="tel:+39 335 5722349">+39 335 572 2349</a>
+          </div>
+          <div className="contacts--icons-container">
+            <img src={whatsappNotFilledIcon} alt="whatsApp" />
+            <a href="https://wa.me/3355722349" target="_blank">
+              WhatsApp
+            </a>
           </div>
           <div className="contacts--icons-container">
             <img src={contactsEmailIcon} alt="email" />
@@ -68,12 +75,7 @@ const Contacts = () => {
               Instagram
             </a>
           </div>
-          <div className="contacts--icons-container">
-            <img src={whatsappIcon} alt="whatsApp" />
-            <a href="https://wa.me/3355722349" target="_blank">
-              WhatsApp
-            </a>
-          </div>
+
           <div className="contacts--icons-container">
             <img src={facebookIcon} alt="facebook" />
             <a
@@ -86,9 +88,12 @@ const Contacts = () => {
         </div>
 
         <div className="contacts--faq">
-          <Link to="/privacyPolicy" className="">
-            Privacy Policy
-          </Link>
+          <div className="contacts--icons-container">
+            <img src={documentIcon} alt="d" />
+            <Link to="/privacyPolicy" className="">
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </div>
