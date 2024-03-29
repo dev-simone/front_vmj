@@ -160,6 +160,7 @@ const AboutMe = () => {
             src={object[currentIndex].imgLeft}
             id="imgS2"
             alt="img"
+            className={`${currentIndex === 2 ? "img-position" : ""}`}
           />
         </div>
         <div className="center">

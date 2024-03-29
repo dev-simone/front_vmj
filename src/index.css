@@ -850,6 +850,10 @@ select {
   object-position: 10% 0;
 }
 
+.img-position {
+  object-position: 0 0;
+}
+
 .img-right {
   object-position: 0 10%;
 }
@@ -896,6 +900,10 @@ select {
   .img-left {
     object-position: 0 50%;
   }
+
+  .img-position {
+    object-position: 0 5%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -928,6 +936,11 @@ select {
   .img-right {
     object-position: 40% 10%;
   }
+
+  .img-position {
+    object-position: 40% 0;
+  }
+
 }
 
 /* -------------------------------- */
