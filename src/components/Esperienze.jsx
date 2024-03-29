@@ -24,7 +24,8 @@ const Esperienze = () => {
         <div>
           <h2 className="ff-lufga text-black">Titolare</h2>
           <p className="experience-p">
-            Consulenza, formazione e allestimento vetrine e interni del punto vendita
+            Consulenza, formazione e allestimento vetrine e interni del punto
+            vendita.
           </p>
         </div>
       </div>
@@ -39,10 +40,11 @@ const Esperienze = () => {
           <p className="experience-p">
             <ul>
               <li>
-                Allestimento vetrine e interni dei PV in accordo con le strategie di posizionamento e di immagine aziendale:
+                Allestimento vetrine e interni dei PV in accordo con le
+                strategie di posizionamento e di immagine aziendale;
               </li>
               <li>
-                Formazione in store staff per il mantenimento delle guidelines
+                Formazione in store staff per il mantenimento delle guidelines.
               </li>
             </ul>
           </p>
@@ -57,7 +59,8 @@ const Esperienze = () => {
         <div>
           <h2 className="ff-lufga text-black">Visual Merchandiser</h2>
           <p className="experience-p">
-            Allestimento vetrine e interni dei PV in accordo con le strategie di posizionamento e di immagine aziendale
+            Allestimento vetrine e interni dei PV in accordo con le strategie di
+            posizionamento e di immagine aziendale.
           </p>
         </div>
       </div>
@@ -72,7 +75,7 @@ const Esperienze = () => {
         <div>
           <h2 className="ff-lufga text-black fs-400">Titolare</h2>
           <p className="experience-p">
-            Consulenza, allestimento vetrine e vendita manichini
+            Consulenza, allestimento vetrine e vendita manichini.
           </p>
         </div>
       </div>

@@ -61,7 +61,7 @@ const ServicesPage = () => {
     {
       title: "Consulenza e allestimento ve",
       titleSpan: "trine",
-      text: "L'allestimento della vetrina è determinante per influenzare la scelta dei clienti di entrare in negozio. Condivido la mia esperienza trentennale per supportare i punti vendita nella creazione di vetrine accattivanti e commercialmente efficaci, per migliorare la visibilità dei prodotti e l’interazione con il pubblico di riferimento",
+      text: "L'allestimento della vetrina è determinante per influenzare la scelta dei clienti di entrare in negozio. Condivido la mia esperienza trentennale per supportare i punti vendita nella creazione di vetrine accattivanti e commercialmente efficaci, per migliorare la visibilità dei prodotti e l’interazione con il pubblico di riferimento.",
       img1: allestimentoVetrine1,
       img2: allestimentoVetrine2,
       img3: allestimentoVetrine3,
@@ -79,9 +79,9 @@ const ServicesPage = () => {
           "Metto a disposizione la mia esperienza per aiutare proprietari di negozi e in store staff ad ottimizzare l'organizzazione dell’allestimento in negozio, potenziandone la comunicazione e migliorando il sellout.",
         bulletTitle: "Modalità di lavoro:",
         bulletList: [
-          "Briefing per una condivisione delle esigenze commerciali del punto vendita",
-          "Individuazione delle soluzioni espositive più adeguate – non solo dal punto di vista estetico, ma soprattutto commerciale – al fine di migliorare l’esposizione in negozio",
-          "Identificazione delle attività operative e intervento sul punto vendita, con definizione di budget e tempistiche",
+          "Briefing per una condivisione delle esigenze commerciali del punto vendita;",
+          "Individuazione delle soluzioni espositive più adeguate – non solo dal punto di vista estetico, ma soprattutto commerciale – al fine di migliorare l’esposizione in negozio;",
+          "Identificazione delle attività operative e intervento sul punto vendita, con definizione di budget e tempistiche.",
         ],
       },
       img1: allestimentoPuntoVendita1,
@@ -94,10 +94,10 @@ const ServicesPage = () => {
       titleSpan: "layout",
       bulletTitleFirst: "LAYOUT NEGOZIO",
       firstText:
-        "Il layout rappresenta l’organizzazione di strutture e prodotto nell'area espositiva, la cui funzione è quella di favorire l'interazione tra cliente e offerta, migliorandone l'attrattività e la comunicazione. Attraverso l'analisi e la riorganizzazione degli spazi, aiuto ad ottimizzare la disposizione degli arredi esistenti o a valutare l’inserimento di nuove strutture espositive per sfruttare in modo produttivo l’area di vendita",
+        "Il layout rappresenta l’organizzazione di strutture e prodotto nell'area espositiva, la cui funzione è quella di favorire l'interazione tra cliente e offerta, migliorandone l'attrattività e la comunicazione. Attraverso l'analisi e la riorganizzazione degli spazi, aiuto ad ottimizzare la disposizione degli arredi esistenti o a valutare l’inserimento di nuove strutture espositive per sfruttare in modo produttivo l’area di vendita.",
       bulletTitleSecond: "LAYOUT VETRINA",
       secondText:
-        "Il layout della vetrina rappresenta l’organizzazione delle strutture espositive, dei manichini e del prodotto all’interno dello spazio espositivo. Sulla base degli elementi presenti nella vetrina aiuto il commerciante ad individuare i supporti più adatti per migliorare la presentazione dei prodotti",
+        "Il layout della vetrina rappresenta l’organizzazione delle strutture espositive, dei manichini e del prodotto all’interno dello spazio espositivo. Sulla base degli elementi presenti nella vetrina aiuto il commerciante ad individuare i supporti più adatti per migliorare la presentazione dei prodotti.",
       img1: layout1,
       img2: layout2,
       img3: layout3,
@@ -106,12 +106,12 @@ const ServicesPage = () => {
     {
       title: "Form",
       titleSpan: "azione",
-      text: "L'identità visiva e l'ambiente coinvolgente di un punto vendita richiedono competenze che vanno ben oltre la mera creatività: è cruciale acquisire la conoscenza delle tecniche espositive, in vetrina e in store, per differenziarsi dalla concorrenza e ottenere vantaggio competitivo. Le sessioni formative sono personalizzate e offrono un supporto operativo per commercianti e operatori del settore retail",
+      text: "L'identità visiva e l'ambiente coinvolgente di un punto vendita richiedono competenze che vanno ben oltre la mera creatività: è cruciale acquisire la conoscenza delle tecniche espositive, in vetrina e in store, per differenziarsi dalla concorrenza e ottenere vantaggio competitivo. Le sessioni formative sono personalizzate e offrono un supporto operativo per commercianti e operatori del settore retail.",
       bulletTitle: "PRINCIPALI ARGOMENTI",
       bulletList: [
-        "Acquisizione degli strumenti per razionalizzare gli spazi espositivi",
-        "Conoscenza delle tecniche per valorizzare i prodotti nel punto vendita",
-        "Sviluppo della capacità di utilizzare materiali, luci e colori per una comunicazione multisensoriale",
+        "Acquisizione degli strumenti per razionalizzare gli spazi espositivi;",
+        "Conoscenza delle tecniche per valorizzare i prodotti nel punto vendita;",
+        "Sviluppo della capacità di utilizzare materiali, luci e colori per una comunicazione multisensoriale.",
       ],
       img1: formazione,
       img2: formazione,
