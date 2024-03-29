@@ -202,6 +202,7 @@ const Navbar = () => {
           <Link
             to={authToken ? "/personal-area" : "/login"}
             onClick={() => handleNavLinkClick("login")}
+            className={`${authToken ? "personal-area--text" : "login-text"}`}
           >
             <svg
               width="25"
@@ -221,7 +222,7 @@ const Navbar = () => {
             </svg>
           </Link>
           {authToken && (
-            <button onClick={logout}>
+            <button className="logout-text" onClick={logout}>
               <svg
                 width="25"
                 height="28"

@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import useAuth from "../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
 
 import {
   emailIcon,
@@ -18,18 +19,22 @@ const Login = () => {
     password: "",
   });
 
+  const notify = (message) => toast.error(message);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
       const response = await axios.post("/user/login", credentials);
-      console.log(response);
-      const authToken = response.headers["auth-token"];
-      sessionStorage.setItem("authToken", authToken);
-      setAuthToken(authToken);
-      navigate("/personal-area");
+      if (response.status === 200) {
+        const authToken = response.headers["auth-token"];
+        sessionStorage.setItem("authToken", authToken);
+        setAuthToken(authToken);
+        navigate("/personal-area");
+      }
     } catch (error) {
       console.error("🚀 ~ handleSubmit ~ error:", error.response.data);
+      notify(error.response.data);
     }
   };
 
@@ -68,7 +73,7 @@ const Login = () => {
             Accedi
           </button>
         </form>
-
+        <Toaster />
         <div className="login-page--disclaimer">
           <div className="manichino-login">
             <img src={manichinoLogin} alt="" />

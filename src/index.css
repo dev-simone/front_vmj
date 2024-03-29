@@ -378,6 +378,45 @@ select {
   width: 20px;
 }
 
+.login-text,
+.logout-text,
+.personal-area--text {
+  position: relative;
+}
+
+.login-text::after,
+.logout-text::after,
+.personal-area--text::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.login-text::after {
+  content: "login";
+  bottom: -1rem;
+}
+
+.logout-text::after {
+  content: "logout";
+  bottom: -1rem;
+}
+
+.personal-area--text::after {
+  content: "area personale";
+  bottom: -2rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.login-text:hover.login-text::after,
+.logout-text:hover.logout-text::after,
+.personal-area--text:hover.personal-area--text::after {
+  opacity: 1;
+}
+
 .navbar svg:hover path {
   stroke: hsl(var(--clr-blue));
 }
@@ -646,6 +685,11 @@ select {
   width: 45rem;
 }
 
+.services-link ul {
+  display: flex;
+  flex-direction: column;
+}
+
 #container-anim {
   transform: translateX(-200%);
 }
@@ -659,6 +703,11 @@ select {
   .services-link {
     margin-top: 0;
     font-size: 18px;
+  }
+
+  .services-link ul {
+    flex-direction: row;
+    gap: 1rem;
   }
 
   .cosa-offro .cornice {
