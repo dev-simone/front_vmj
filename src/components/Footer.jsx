@@ -41,7 +41,9 @@ const Footer = () => {
     <footer>
       <div>
         <div className="footer--logo-container">
-          <img src={logo} alt="logo" />
+          <Link to="/" onClick={() => handleNavLinkClick("/")}>
+            <img src={logo} alt="logo" />
+          </Link>
           <div className="ff-lufga text-black">
             <p>Visual Merchandising Journey</p>
           </div>
