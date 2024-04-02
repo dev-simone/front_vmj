@@ -124,7 +124,7 @@ const ServicesPage = () => {
       firstP:
         "Il percorso proposto si configura come un prezioso alleato nel comprendere le tecniche e gli strumenti più diffusi ed attuali di visual merchandising, approfondendo i concetti fondamentali relativi all'allestimento, sia in vetrina che in negozio.",
       secondP:
-        "È una proposta formativa completa che, partendo dall’analisi delle principali dinamiche espositive, consente al partecipante di affrontare con consapevolezza leproblematiche quotidiane dell’allestimento, adottando soluzioni esteticamente interessanti e commercialmente efficaci. Materiale di supporto, slide e case history completano l’attività formativa.",
+        "È una proposta formativa completa che, partendo dall’analisi delle principali dinamiche espositive, consente al partecipante di affrontare con consapevolezza le problematiche quotidiane dell’allestimento, adottando soluzioni esteticamente interessanti e commercialmente efficaci. Materiale di supporto, slide e case history completano l’attività formativa.",
       bulletTitle: "A CHI E' RIVOLTO",
       thirdP:
         "Il corso è rivolto a personale di vendita, commercianti, professionisti del settore che vogliono migliorare o aggiornare le proprie competenze.",
@@ -152,7 +152,7 @@ const ServicesPage = () => {
       title: "Formazione: Punto ven",
       titleSpan: "dita",
       firstP:
-        "Partendo da un’analisi delle principali problematiche del punto vendita, si definisce con il committente l’attività di formazione appropriata, considerando l’assortimento, lo spazio di vendita e l’area deposito, gli elementi espositivi, le vetrine ed infrastrutture, il personale da coinvolgere. L’approccio formativo, oltre ad un taglio fortemente operativo, è di natura consulenziale, con l’intento di migliorare la gestione dell’esposizione nel punto vendita e, di conseguenza, il sell out.",
+        "Partendo da un’analisi delle principali problematiche del punto vendita, si definisce con il committente l’attività di formazione appropriata, considerando l’assortimento, lo spazio di vendita e l’area deposito, gli elementi espositivi, le vetrine ed infrastrutture, il personale da coinvolgere. L’approccio formativo, oltre ad un taglio fortemente operativo, è di natura consulenziale, con l’intento di migliorare la gestione dell’esposizione nel punto vendita e, di conseguenza, il sell-out.",
       img1: formazionePV1,
       img2: formazionePV2,
       img3: formazionePV3,
