@@ -21,6 +21,13 @@ const Footer = () => {
   const handleNavLinkClick = (page) => {
     if (sessionStorage.getItem("page") === "/" && page === "/") {
       window.scrollTo(0, 0);
+    } else if (
+      sessionStorage.getItem("page") === "services" &&
+      page === "services"
+    ) {
+      window.scrollTo(0, 0);
+    } else if (sessionStorage.getItem("page") === "blog" && page === "blog") {
+      window.scrollTo(0, 0);
     }
     setSelectedPage(page);
     sessionStorage.setItem("page", page);
