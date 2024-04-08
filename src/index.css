@@ -2491,6 +2491,10 @@ select {
   padding-block: 2rem;
 }
 
+.article-handler--page {
+  white-space: wrap;
+}
+
 .article-handler--container {
   gap: 2rem;
   display: flex;

@@ -16,9 +16,12 @@ import {
 } from "../assets/images";
 const Footer = () => {
   const { contextSafe } = useGSAP();
-  const { selectedPage, setSelectedPage } = useAuth();
+  const { setSelectedPage } = useAuth();
 
   const handleNavLinkClick = (page) => {
+    if (sessionStorage.getItem("page") === "/" && page === "/") {
+      window.scrollTo(0, 0);
+    }
     setSelectedPage(page);
     sessionStorage.setItem("page", page);
   };

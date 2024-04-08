@@ -20,6 +20,7 @@ const Article = () => {
           throw new Error("Articolo non trovato");
         }
         const data = await response.data;
+        console.log(data);
         setArticle(data);
       } catch (error) {
         console.error(error);
@@ -41,7 +42,7 @@ const Article = () => {
       </button>
       <div>
         <h1>{article?.title}</h1>
-        <h2>{article?.subtitle}</h2>
+        <h2>{article?.subTitle}</h2>
       </div>
       <div className="article-page--img">
         <img src={article?.imagePath || placeholder} alt="" />

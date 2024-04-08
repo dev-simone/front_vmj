@@ -109,6 +109,13 @@ const ArticleHandler = () => {
     ],
   });
 
+  const formatHTMLContent = (content) => {
+    // Aggiungi uno spazio vuoto solo tra i paragrafi seguiti da <br>
+    const formattedContent = content.replace(/<\/p><br>/g, '<p>&nbsp;</p>');
+
+    return formattedContent;
+  };
+
   useEffect(() => {
     const getArticleById = async () => {
       try {
@@ -117,8 +124,10 @@ const ArticleHandler = () => {
           return;
         }
         const data = await response.data;
+        console.log(data.content);
         setData(data);
-        editor.commands.setContent(data.content);
+        const content = formatHTMLContent(data.content);
+        editor.commands.setContent(content);
       } catch (error) {
         console.error(error);
       }
@@ -183,7 +192,6 @@ const ArticleHandler = () => {
     const contentWithLineBreaks = contentHTM.replace(/(<p><\/p>)+/g, "<br>");
 
     formData.append("content", contentWithLineBreaks);
-    console.log(editor.getHTML());
 
     if (data.imgFile) {
       new Compressor(data.imgFile, {
@@ -328,10 +336,6 @@ const ArticleHandler = () => {
             onChange={handleHeroFileSelect}
             ref={imagePickerRef}
           />
-        </div>
-
-        <div>
-          <h2>Paragrafo</h2>
         </div>
 
         <BubbleMenu editor={editor} className="editor--bubble-menu">
