@@ -1305,7 +1305,7 @@ select {
   width: 40ch;
   font-size: 14px;
   font-weight: 600;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .index-1 ul>li {
@@ -1428,8 +1428,10 @@ select {
 .arrow-wood-container {
   display: flex;
   justify-content: center;
+  gap: 1rem;
   width: 370px;
   z-index: 100;
+  margin: 0 auto;
 }
 
 .arrow-p {
@@ -1447,7 +1449,6 @@ select {
   place-content: center;
   border-radius: 50px;
   box-shadow: 0 4px 10px #8c7661;
-  margin-right: 1rem;
 }
 
 .arrow-wood-btn:hover {
